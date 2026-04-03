@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Turnip Tracker — Adreno Driver Releases</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg:        #0a0c10;
+      --bg2:       #0f1218;
+      --bg3:       #161b24;
+      --border:    #1e2535;
+      --accent:    #00e5ff;
+      --accent2:   #7c3aed;
+      --green:     #22c55e;
+      --yellow:    #facc15;
+      --red:       #ef4444;
+      --text:      #e2e8f0;
+      --muted:     #64748b;
+      --card-glow: 0 0 0 1px var(--border), 0 4px 32px rgba(0,229,255,0.04);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Syne', sans-serif;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* ── noise grain overlay ── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.5;
+    }
+
+    /* ── grid line background ── */
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(0,229,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,229,255,0.03) 1px, transparent 1px);
+      background-size: 40px 40px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ── layout ── */
+    .wrap {
+      position: relative;
+      z-index: 1;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px 80px;
+    }
+
+    /* ── header ── */
+    header {
+      padding: 52px 0 36px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 40px;
+    }
+
+    .logo-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 10px;
+    }
+
+    .logo-icon {
+      width: 40px; height: 40px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px;
+      flex-shrink: 0;
+      box-shadow: 0 0 20px rgba(0,229,255,0.3);
+    }
+
+    h1 {
+      font-size: clamp(1.6rem, 4vw, 2.6rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1;
+    }
+
+    h1 span { color: var(--accent); }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 0.92rem;
+      font-family: 'JetBrains Mono', monospace;
+      margin-top: 6px;
+    }
+
+    .meta-row {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-top: 18px;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.75rem;
+      font-family: 'JetBrains Mono', monospace;
+      padding: 4px 10px;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+    }
+
+    .badge.live { border-color: var(--green); color: var(--green); }
+    .badge.live::before {
+      content: '';
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--green);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    /* ── tabs / sort ── */
+    .controls {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 28px;
+      flex-wrap: wrap;
+    }
+
+    .tab {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.78rem;
+      padding: 7px 16px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: var(--bg2);
+      color: var(--muted);
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .tab:hover { border-color: var(--accent); color: var(--accent); }
+    .tab.active {
+      background: var(--accent);
+      color: #000;
+      border-color: var(--accent);
+      font-weight: 700;
+    }
+
+    /* ── summary cards ── */
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 14px;
+      margin-bottom: 36px;
+    }
+
+    .stat-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px 20px;
+      box-shadow: var(--card-glow);
+      transition: border-color 0.2s;
+    }
+
+    .stat-card:hover { border-color: var(--accent); }
+
+    .stat-label {
+      font-size: 0.7rem;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 8px;
+    }
+
+    .stat-value {
+      font-size: 1.9rem;
+      font-weight: 800;
+      color: var(--accent);
+      line-height: 1;
+    }
+
+    .stat-sub {
+      font-size: 0.72rem;
+      color: var(--muted);
+      font-family: 'JetBrains Mono', monospace;
+      margin-top: 4px;
+    }
+
+    /* ── repo cards ── */
+    .repo-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      margin-bottom: 20px;
+      overflow: hidden;
+      box-shadow: var(--card-glow);
+      transition: border-color 0.2s;
+    }
+
+    .repo-card:hover { border-color: rgba(0,229,255,0.3); }
+
+    .repo-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 22px 24px 16px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .repo-name {
+      font-size: 1rem;
+      font-weight: 700;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--accent);
+    }
+
+    .repo-name a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .repo-name a:hover { text-decoration: underline; }
+
+    .repo-desc {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 4px;
+      line-height: 1.4;
+      max-width: 640px;
+    }
+
+    .repo-stats {
+      display: flex;
+      gap: 14px;
+      flex-shrink: 0;
+      align-items: center;
+    }
+
+    .repo-stat {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.8rem;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--muted);
+    }
+
+    .repo-stat .num { color: var(--text); font-weight: 700; }
+
+    .toggle-btn {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      border-radius: 6px;
+      padding: 4px 10px;
+      font-size: 0.75rem;
+      cursor: pointer;
+      font-family: 'JetBrains Mono', monospace;
+      transition: all 0.15s;
+      white-space: nowrap;
+    }
+    .toggle-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+    /* ── releases table ── */
+    .releases-body {
+      border-top: 1px solid var(--border);
+      display: none;
+    }
+
+    .releases-body.open { display: block; }
+
+    .release-row {
+      display: grid;
+      grid-template-columns: 1fr auto auto auto auto;
+      gap: 12px;
+      align-items: center;
+      padding: 14px 24px;
+      border-bottom: 1px solid var(--border);
+      transition: background 0.15s;
+    }
+
+    .release-row:last-child { border-bottom: none; }
+    .release-row:hover { background: var(--bg3); }
+
+    .release-name {
+      font-size: 0.88rem;
+      font-weight: 700;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--text);
+    }
+
+    .release-name a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .release-name a:hover { color: var(--accent); }
+
+    .release-date {
+      font-size: 0.72rem;
+      color: var(--muted);
+      font-family: 'JetBrains Mono', monospace;
+      white-space: nowrap;
+    }
+
+    .dl-count {
+      font-size: 0.82rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 700;
+      color: var(--yellow);
+      white-space: nowrap;
+    }
+
+    .dl-bar-wrap {
+      width: 80px;
+      height: 4px;
+      background: var(--bg3);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    .dl-bar {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      border-radius: 2px;
+      transition: width 0.6s ease;
+    }
+
+    .pre-badge {
+      font-size: 0.65rem;
+      font-family: 'JetBrains Mono', monospace;
+      padding: 2px 7px;
+      border-radius: 4px;
+      background: rgba(250,204,21,0.12);
+      color: var(--yellow);
+      border: 1px solid rgba(250,204,21,0.3);
+      white-space: nowrap;
+    }
+
+    .stable-badge {
+      font-size: 0.65rem;
+      font-family: 'JetBrains Mono', monospace;
+      padding: 2px 7px;
+      border-radius: 4px;
+      background: rgba(34,197,94,0.12);
+      color: var(--green);
+      border: 1px solid rgba(34,197,94,0.3);
+      white-space: nowrap;
+    }
+
+    /* ── loading / error ── */
+    .state-msg {
+      text-align: center;
+      padding: 80px 20px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .state-msg .big { font-size: 2.5rem; margin-bottom: 12px; }
+    .state-msg .err { color: var(--red); }
+
+    /* ── spinner ── */
+    .spinner {
+      width: 36px; height: 36px;
+      border: 3px solid var(--border);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      margin: 0 auto 16px;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ── footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      margin-top: 60px;
+      padding-top: 24px;
+      font-size: 0.75rem;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    @media (max-width: 640px) {
+      .release-row { grid-template-columns: 1fr auto; }
+      .release-row .dl-bar-wrap,
+      .release-row .release-date { display: none; }
+      .repo-stats { display: none; }
+    }
+  </style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- Header -->
+  <header>
+    <div class="logo-row">
+      <div class="logo-icon">⚡</div>
+      <h1>Turnip <span>Tracker</span></h1>
+    </div>
+    <p class="subtitle">// Adreno Mesa Vulkan driver release monitor</p>
+    <div class="meta-row">
+      <span class="badge live" id="live-badge">data current</span>
+      <span class="badge" id="fetch-time">—</span>
+      <span class="badge">6 repos tracked</span>
+    </div>
+  </header>
+
+  <!-- Sort controls -->
+  <div class="controls">
+    <button class="tab active" onclick="setSort('downloads')">↓ Downloads</button>
+    <button class="tab" onclick="setSort('stars')">★ Stars</button>
+    <button class="tab" onclick="setSort('recent')">🕒 Recent</button>
+  </div>
+
+  <!-- Summary stats -->
+  <div class="summary-grid" id="summary-grid"></div>
+
+  <!-- Repo list -->
+  <div id="repo-list">
+    <div class="state-msg">
+      <div class="spinner"></div>
+      Loading releases data…
+    </div>
+  </div>
+
+  <footer>
+    <span>Data fetched via GitHub Actions every 6 hours • No API key exposed in browser</span>
+    <span id="footer-time"></span>
+  </footer>
+</div>
+
+<script>
+  let allData = [];
+  let sortMode = 'downloads';
+
+  // ── helpers ────────────────────────────────────────────────
+  function fmt(n) {
+    if (n >= 1_000_000) return (n / 1_000_000).toFixed(1) + 'M';
+    if (n >= 1_000)     return (n / 1_000).toFixed(1)     + 'k';
+    return String(n);
+  }
+
+  function relDate(iso) {
+    const d = new Date(iso);
+    const now = Date.now();
+    const diff = now - d.getTime();
+    const days = Math.floor(diff / 86400000);
+    if (days === 0) return 'today';
+    if (days === 1) return 'yesterday';
+    if (days < 30)  return `${days}d ago`;
+    if (days < 365) return `${Math.floor(days/30)}mo ago`;
+    return `${Math.floor(days/365)}y ago`;
+  }
+
+  function shortDate(iso) {
+    return new Date(iso).toLocaleDateString('en-US', { year:'numeric', month:'short', day:'numeric' });
+  }
+
+  function totalDownloads(repo) {
+    return repo.releases.reduce((s, r) => s + r.total_downloads, 0);
+  }
+
+  function latestDate(repo) {
+    const dates = repo.releases.map(r => new Date(r.published_at).getTime()).filter(Boolean);
+    return dates.length ? Math.max(...dates) : 0;
+  }
+
+  // ── sort ───────────────────────────────────────────────────
+  function setSort(mode) {
+    sortMode = mode;
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    event.target.classList.add('active');
+    render();
+  }
+
+  function sorted(data) {
+    return [...data].sort((a, b) => {
+      if (sortMode === 'downloads') return totalDownloads(b) - totalDownloads(a);
+      if (sortMode === 'stars')     return b.stars - a.stars;
+      if (sortMode === 'recent')    return latestDate(b) - latestDate(a);
+      return 0;
+    });
+  }
+
+  // ── render ─────────────────────────────────────────────────
+  function render() {
+    const list = document.getElementById('repo-list');
+    const data = sorted(allData);
+
+    if (!data.length) {
+      list.innerHTML = `<div class="state-msg"><div class="big">🔍</div>No data found.</div>`;
+      return;
+    }
+
+    // max downloads for bar scaling
+    const maxDl = Math.max(...data.flatMap(r => r.releases.map(x => x.total_downloads)), 1);
+
+    list.innerHTML = data.map((repo, idx) => {
+      const dlTotal = totalDownloads(repo);
+      const latest  = repo.releases[0];
+      const repoUrl = `https://github.com/${repo.repo}`;
+      const openByDefault = idx === 0;
+
+      const rows = repo.releases.map(r => {
+        const pct = Math.round((r.total_downloads / maxDl) * 100);
+        return `
+          <div class="release-row">
+            <div>
+              <div class="release-name"><a href="${r.html_url}" target="_blank" rel="noopener">${escHtml(r.name || r.tag_name)}</a></div>
+              <div class="release-date">${shortDate(r.published_at)} · ${relDate(r.published_at)}</div>
+            </div>
+            <div class="dl-bar-wrap"><div class="dl-bar" style="width:${pct}%"></div></div>
+            <div class="dl-count">⬇ ${fmt(r.total_downloads)}</div>
+            <div>${r.prerelease
+              ? '<span class="pre-badge">pre-release</span>'
+              : '<span class="stable-badge">stable</span>'}</div>
+            <div class="release-date">${r.asset_count} asset${r.asset_count !== 1 ? 's' : ''}</div>
+          </div>`;
+      }).join('');
+
+      return `
+        <div class="repo-card">
+          <div class="repo-header" onclick="toggleCard(this)">
+            <div>
+              <div class="repo-name"><a href="${repoUrl}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${escHtml(repo.repo)}</a></div>
+              ${repo.description ? `<div class="repo-desc">${escHtml(repo.description)}</div>` : ''}
+              ${latest ? `<div class="release-date" style="margin-top:6px">Latest: <b style="color:var(--text)">${escHtml(latest.name||latest.tag_name)}</b> · ${relDate(latest.published_at)}</div>` : ''}
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px;flex-shrink:0">
+              <div class="repo-stats">
+                <span class="repo-stat">★ <span class="num">${fmt(repo.stars)}</span></span>
+                <span class="repo-stat">⑂ <span class="num">${fmt(repo.forks)}</span></span>
+                <span class="repo-stat">⬇ <span class="num">${fmt(dlTotal)}</span></span>
+              </div>
+              <button class="toggle-btn">${openByDefault ? 'collapse ▲' : 'expand ▼'}</button>
+            </div>
+          </div>
+          <div class="releases-body ${openByDefault ? 'open' : ''}">
+            ${rows || '<div style="padding:16px 24px;color:var(--muted);font-size:0.8rem;font-family:monospace">No releases found.</div>'}
+          </div>
+        </div>`;
+    }).join('');
+  }
+
+  function toggleCard(header) {
+    const body = header.nextElementSibling;
+    const btn  = header.querySelector('.toggle-btn');
+    const open = body.classList.toggle('open');
+    btn.textContent = open ? 'collapse ▲' : 'expand ▼';
+  }
+
+  function escHtml(s) {
+    return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  // ── summary stats ──────────────────────────────────────────
+  function renderSummary() {
+    const totalDl   = allData.reduce((s, r) => s + totalDownloads(r), 0);
+    const totalRel  = allData.reduce((s, r) => s + r.releases.length, 0);
+    const totalStars= allData.reduce((s, r) => s + r.stars, 0);
+    const mostDl    = allData.reduce((best, r) => totalDownloads(r) > totalDownloads(best) ? r : best, allData[0]);
+
+    document.getElementById('summary-grid').innerHTML = `
+      <div class="stat-card">
+        <div class="stat-label">Total Downloads</div>
+        <div class="stat-value">${fmt(totalDl)}</div>
+        <div class="stat-sub">across all tracked repos</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Releases Tracked</div>
+        <div class="stat-value">${totalRel}</div>
+        <div class="stat-sub">from ${allData.length} repositories</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Total Stars</div>
+        <div class="stat-value">${fmt(totalStars)}</div>
+        <div class="stat-sub">combined GitHub stars</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Most Downloaded</div>
+        <div class="stat-value" style="font-size:1rem;padding-top:4px">${mostDl ? escHtml(mostDl.repo.split('/')[1]) : '—'}</div>
+        <div class="stat-sub">${mostDl ? fmt(totalDownloads(mostDl)) + ' downloads' : ''}</div>
+      </div>
+    `;
+  }
+
+  // ── load data ──────────────────────────────────────────────
+  async function load() {
+    try {
+      const res = await fetch('releases.json?t=' + Date.now());
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      allData = await res.json();
+
+      // update timestamp badge
+      const fetchedAt = allData[0]?.fetched_at;
+      if (fetchedAt) {
+        document.getElementById('fetch-time').textContent = 'updated ' + relDate(fetchedAt);
+        document.getElementById('footer-time').textContent = 'Last fetch: ' + new Date(fetchedAt).toUTCString();
+      }
+
+      renderSummary();
+      render();
+    } catch (err) {
+      document.getElementById('repo-list').innerHTML = `
+        <div class="state-msg">
+          <div class="big">⚠</div>
+          <div class="err">Could not load <code>releases.json</code></div>
+          <div style="margin-top:12px">${escHtml(err.message)}</div>
+          <div style="margin-top:16px;font-size:0.78rem">
+            Make sure the GitHub Actions workflow has run at least once<br>
+            to generate <code>releases.json</code> in your repository root.
+          </div>
+        </div>`;
+    }
+  }
+
+  load();
+</script>
+</body>
+</html>
