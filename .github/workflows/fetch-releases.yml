@@ -29,6 +29,7 @@ jobs:
             "StevenMXZ/Adreno-Tools-Drivers"
             "whitebelyash/freedreno_turnip-CI"
             "nihui/mesa-turnip-android-driver"
+            "MrPurple666/purple-turnip"
           )
 
           OUTPUT="["
