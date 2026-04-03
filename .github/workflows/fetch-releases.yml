@@ -25,7 +25,7 @@ jobs:
           REPOS=(
             "K11MCH1/AdrenoToolsDrivers"
             "Weab-chan/freedreno_turnip-CI"
-            "ilhan-athn7/freedreno_turnip-CI"
+            "s1mptom/freedreno_turnip-CI"
             "StevenMXZ/Adreno-Tools-Drivers"
             "whitebelyash/freedreno_turnip-CI"
             "nihui/mesa-turnip-android-driver"
