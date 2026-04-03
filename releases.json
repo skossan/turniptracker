@@ -1,0 +1,273 @@
+[
+  {
+    "repo": "K11MCH1/AdrenoToolsDrivers",
+    "stars": 4900,
+    "forks": 132,
+    "description": "A repository for Skyline, Strato, Vita3K and Yuzu Android compatible Adreno drivers.",
+    "fetched_at": "2026-04-03T14:13:26Z",
+    "releases": []
+  },
+  {
+    "repo": "Weab-chan/freedreno_turnip-CI",
+    "stars": 245,
+    "forks": 11,
+    "description": "A script for building turnip driver as an adrenotool package from mesa repository, scheduled releases per 2 week via github actions.",
+    "fetched_at": "2026-04-03T14:13:26Z",
+    "releases": []
+  },
+  {
+    "repo": "ilhan-athn7/freedreno_turnip-CI",
+    "stars": 148,
+    "forks": 87,
+    "description": "A script for building turnip driver as a magisk module from mesa repository, scheduled releases per 2 week via github actions.",
+    "fetched_at": "2026-04-03T14:13:26Z",
+    "releases": [
+      {
+        "id": 135455939,
+        "tag_name": "github_run",
+        "name": "Weekly Action Release",
+        "published_at": "2024-01-01T05:33:16Z",
+        "html_url": "https://github.com/ilhan-athn7/freedreno_turnip-CI/releases/tag/github_run",
+        "prerelease": false,
+        "body": "Turnip magisk module and driver package for adrenotools",
+        "total_downloads": 17,
+        "asset_count": 3,
+        "assets": [
+          {
+            "name": "turnip.zip",
+            "download_count": 2,
+            "size": 3298871,
+            "browser_download_url": "https://github.com/ilhan-athn7/freedreno_turnip-CI/releases/download/github_run/turnip.zip"
+          },
+          {
+            "name": "turnip_adrenotools.zip",
+            "download_count": 4,
+            "size": 3254712,
+            "browser_download_url": "https://github.com/ilhan-athn7/freedreno_turnip-CI/releases/download/github_run/turnip_adrenotools.zip"
+          },
+          {
+            "name": "update.json",
+            "download_count": 11,
+            "size": 276,
+            "browser_download_url": "https://github.com/ilhan-athn7/freedreno_turnip-CI/releases/download/github_run/update.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "repo": "StevenMXZ/Adreno-Tools-Drivers",
+    "stars": 466,
+    "forks": 14,
+    "description": "A script for building turnip driver as an adrenotool package from mesa repository, scheduled releases per 2 week via github actions.",
+    "fetched_at": "2026-04-03T14:13:26Z",
+    "releases": []
+  },
+  {
+    "repo": "whitebelyash/freedreno_turnip-CI",
+    "stars": 270,
+    "forks": 10,
+    "description": "A script for building turnip driver as a magisk module from mesa repository, scheduled releases per 2 week via github actions.",
+    "fetched_at": "2026-04-03T14:13:26Z",
+    "releases": []
+  },
+  {
+    "repo": "nihui/mesa-turnip-android-driver",
+    "stars": 34,
+    "forks": 3,
+    "description": "mesa turnip driver for android",
+    "fetched_at": "2026-04-03T14:13:26Z",
+    "releases": [
+      {
+        "id": 279807125,
+        "tag_name": "25.3.4",
+        "name": "mesa turnip driver for android 25.3.4",
+        "published_at": "2026-01-26T03:26:49Z",
+        "html_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/tag/25.3.4",
+        "prerelease": false,
+        "body": "",
+        "total_downloads": 6907,
+        "asset_count": 1,
+        "assets": [
+          {
+            "name": "mesa-turnip-android-25.3.4.zip",
+            "download_count": 6907,
+            "size": 3350326,
+            "browser_download_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/download/25.3.4/mesa-turnip-android-25.3.4.zip"
+          }
+        ]
+      },
+      {
+        "id": 275023712,
+        "tag_name": "25.3.3",
+        "name": "mesa turnip driver for android 25.3.3",
+        "published_at": "2026-01-08T03:25:44Z",
+        "html_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/tag/25.3.3",
+        "prerelease": false,
+        "body": "",
+        "total_downloads": 1196,
+        "asset_count": 1,
+        "assets": [
+          {
+            "name": "mesa-turnip-android-25.3.3.zip",
+            "download_count": 1196,
+            "size": 3350484,
+            "browser_download_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/download/25.3.3/mesa-turnip-android-25.3.3.zip"
+          }
+        ]
+      },
+      {
+        "id": 259214071,
+        "tag_name": "25.2.6",
+        "name": "mesa turnip driver for android 25.2.6",
+        "published_at": "2025-11-03T11:11:17Z",
+        "html_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/tag/25.2.6",
+        "prerelease": false,
+        "body": "",
+        "total_downloads": 862,
+        "asset_count": 1,
+        "assets": [
+          {
+            "name": "mesa-turnip-android-25.2.6.zip",
+            "download_count": 862,
+            "size": 3264366,
+            "browser_download_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/download/25.2.6/mesa-turnip-android-25.2.6.zip"
+          }
+        ]
+      },
+      {
+        "id": 253899281,
+        "tag_name": "edge",
+        "name": "mesa turnip driver for android edge",
+        "published_at": "2025-10-12T13:05:16Z",
+        "html_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/tag/edge",
+        "prerelease": false,
+        "body": "",
+        "total_downloads": 184,
+        "asset_count": 1,
+        "assets": [
+          {
+            "name": "mesa-turnip-android-edge.zip",
+            "download_count": 184,
+            "size": 3371164,
+            "browser_download_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/download/edge/mesa-turnip-android-edge.zip"
+          }
+        ]
+      },
+      {
+        "id": 253605326,
+        "tag_name": "25.2.4",
+        "name": "mesa turnip driver for android 25.2.4",
+        "published_at": "2025-10-10T10:56:30Z",
+        "html_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/tag/25.2.4",
+        "prerelease": false,
+        "body": "",
+        "total_downloads": 124,
+        "asset_count": 1,
+        "assets": [
+          {
+            "name": "mesa-turnip-android-25.2.4.zip",
+            "download_count": 124,
+            "size": 3264022,
+            "browser_download_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/download/25.2.4/mesa-turnip-android-25.2.4.zip"
+          }
+        ]
+      },
+      {
+        "id": 251296237,
+        "tag_name": "25.2.3",
+        "name": "mesa turnip driver for android 25.2.3",
+        "published_at": "2025-10-01T02:13:35Z",
+        "html_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/tag/25.2.3",
+        "prerelease": false,
+        "body": "",
+        "total_downloads": 194,
+        "asset_count": 1,
+        "assets": [
+          {
+            "name": "mesa-turnip-android-25.2.3.zip",
+            "download_count": 194,
+            "size": 3263220,
+            "browser_download_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/download/25.2.3/mesa-turnip-android-25.2.3.zip"
+          }
+        ]
+      },
+      {
+        "id": 246661469,
+        "tag_name": "25.2.2",
+        "name": "mesa turnip driver for android 25.2.2",
+        "published_at": "2025-09-12T03:07:42Z",
+        "html_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/tag/25.2.2",
+        "prerelease": false,
+        "body": "",
+        "total_downloads": 126,
+        "asset_count": 1,
+        "assets": [
+          {
+            "name": "mesa-turnip-android-25.2.2.zip",
+            "download_count": 126,
+            "size": 3262807,
+            "browser_download_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/download/25.2.2/mesa-turnip-android-25.2.2.zip"
+          }
+        ]
+      },
+      {
+        "id": 231650529,
+        "tag_name": "25.1.5",
+        "name": "mesa turnip driver for android 25.1.5",
+        "published_at": "2025-07-11T02:36:45Z",
+        "html_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/tag/25.1.5",
+        "prerelease": false,
+        "body": "",
+        "total_downloads": 289,
+        "asset_count": 1,
+        "assets": [
+          {
+            "name": "mesa-turnip-android-25.1.5.zip",
+            "download_count": 289,
+            "size": 3200483,
+            "browser_download_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/download/25.1.5/mesa-turnip-android-25.1.5.zip"
+          }
+        ]
+      },
+      {
+        "id": 223937878,
+        "tag_name": "25.1.3",
+        "name": "mesa turnip driver for android 25.1.3",
+        "published_at": "2025-06-09T07:23:37Z",
+        "html_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/tag/25.1.3",
+        "prerelease": false,
+        "body": "",
+        "total_downloads": 164,
+        "asset_count": 1,
+        "assets": [
+          {
+            "name": "mesa-turnip-android-25.1.3.zip",
+            "download_count": 164,
+            "size": 3199692,
+            "browser_download_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/download/25.1.3/mesa-turnip-android-25.1.3.zip"
+          }
+        ]
+      },
+      {
+        "id": 223339307,
+        "tag_name": "25.1.2",
+        "name": "mesa turnip driver for android 25.1.2",
+        "published_at": "2025-06-05T11:14:55Z",
+        "html_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/tag/25.1.2",
+        "prerelease": false,
+        "body": "",
+        "total_downloads": 84,
+        "asset_count": 1,
+        "assets": [
+          {
+            "name": "mesa-turnip-android-25.1.2.zip",
+            "download_count": 84,
+            "size": 3199926,
+            "browser_download_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/download/25.1.2/mesa-turnip-android-25.1.2.zip"
+          }
+        ]
+      }
+    ]
+  }
+]
