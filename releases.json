@@ -4,7 +4,7 @@
     "stars": 4900,
     "forks": 132,
     "description": "A repository for Skyline, Strato, Vita3K and Yuzu Android compatible Adreno drivers.",
-    "fetched_at": "2026-04-03T14:13:26Z",
+    "fetched_at": "2026-04-03T14:20:08Z",
     "releases": []
   },
   {
@@ -12,7 +12,7 @@
     "stars": 245,
     "forks": 11,
     "description": "A script for building turnip driver as an adrenotool package from mesa repository, scheduled releases per 2 week via github actions.",
-    "fetched_at": "2026-04-03T14:13:26Z",
+    "fetched_at": "2026-04-03T14:20:08Z",
     "releases": []
   },
   {
@@ -20,7 +20,7 @@
     "stars": 148,
     "forks": 87,
     "description": "A script for building turnip driver as a magisk module from mesa repository, scheduled releases per 2 week via github actions.",
-    "fetched_at": "2026-04-03T14:13:26Z",
+    "fetched_at": "2026-04-03T14:20:08Z",
     "releases": [
       {
         "id": 135455939,
@@ -60,7 +60,7 @@
     "stars": 466,
     "forks": 14,
     "description": "A script for building turnip driver as an adrenotool package from mesa repository, scheduled releases per 2 week via github actions.",
-    "fetched_at": "2026-04-03T14:13:26Z",
+    "fetched_at": "2026-04-03T14:20:08Z",
     "releases": []
   },
   {
@@ -68,7 +68,7 @@
     "stars": 270,
     "forks": 10,
     "description": "A script for building turnip driver as a magisk module from mesa repository, scheduled releases per 2 week via github actions.",
-    "fetched_at": "2026-04-03T14:13:26Z",
+    "fetched_at": "2026-04-03T14:20:08Z",
     "releases": []
   },
   {
@@ -76,7 +76,7 @@
     "stars": 34,
     "forks": 3,
     "description": "mesa turnip driver for android",
-    "fetched_at": "2026-04-03T14:13:26Z",
+    "fetched_at": "2026-04-03T14:20:08Z",
     "releases": [
       {
         "id": 279807125,
@@ -105,12 +105,12 @@
         "html_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/tag/25.3.3",
         "prerelease": false,
         "body": "",
-        "total_downloads": 1196,
+        "total_downloads": 1197,
         "asset_count": 1,
         "assets": [
           {
             "name": "mesa-turnip-android-25.3.3.zip",
-            "download_count": 1196,
+            "download_count": 1197,
             "size": 3350484,
             "browser_download_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/download/25.3.3/mesa-turnip-android-25.3.3.zip"
           }
@@ -269,5 +269,13 @@
         ]
       }
     ]
+  },
+  {
+    "repo": "MrPurple666/purple-turnip",
+    "stars": 479,
+    "forks": 3,
+    "description": "",
+    "fetched_at": "2026-04-03T14:20:08Z",
+    "releases": []
   }
 ]
