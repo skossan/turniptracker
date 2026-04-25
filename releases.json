@@ -4,7 +4,7 @@
     "stars": 4929,
     "forks": 133,
     "description": "A repository for Skyline, Strato, Vita3K and Yuzu Android compatible Adreno drivers.",
-    "fetched_at": "2026-04-25T18:15:33Z",
+    "fetched_at": "2026-04-25T19:19:09Z",
     "releases": [
       {
         "id": 276731546,
@@ -13,7 +13,7 @@
         "published_at": "2026-01-14T13:54:43Z",
         "html_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/tag/v840",
         "prerelease": false,
-        "total_downloads": 339624,
+        "total_downloads": 339899,
         "asset_count": 1
       },
       {
@@ -23,7 +23,7 @@
         "published_at": "2026-01-14T13:17:24Z",
         "html_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/tag/v837",
         "prerelease": false,
-        "total_downloads": 51417,
+        "total_downloads": 51467,
         "asset_count": 1
       },
       {
@@ -33,7 +33,7 @@
         "published_at": "2026-01-08T01:03:08Z",
         "html_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/tag/v26.0.0-rc08",
         "prerelease": false,
-        "total_downloads": 324928,
+        "total_downloads": 325095,
         "asset_count": 4
       },
       {
@@ -43,7 +43,7 @@
         "published_at": "2025-12-26T01:13:15Z",
         "html_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/tag/v26.0.0-rc07",
         "prerelease": false,
-        "total_downloads": 172139,
+        "total_downloads": 172246,
         "asset_count": 3
       },
       {
@@ -53,7 +53,7 @@
         "published_at": "2025-12-10T10:44:34Z",
         "html_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/tag/v26.0.0-rc06",
         "prerelease": false,
-        "total_downloads": 123305,
+        "total_downloads": 123325,
         "asset_count": 3
       },
       {
@@ -63,7 +63,7 @@
         "published_at": "2025-11-29T14:01:16Z",
         "html_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/tag/v26.0.0-rc05",
         "prerelease": false,
-        "total_downloads": 89058,
+        "total_downloads": 89074,
         "asset_count": 3
       },
       {
@@ -73,7 +73,7 @@
         "published_at": "2025-11-22T04:43:31Z",
         "html_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/tag/v26.0.0-rc04",
         "prerelease": false,
-        "total_downloads": 72894,
+        "total_downloads": 72903,
         "asset_count": 3
       },
       {
@@ -83,7 +83,7 @@
         "published_at": "2025-11-12T15:12:33Z",
         "html_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/tag/v26.0.0-rc.03",
         "prerelease": false,
-        "total_downloads": 145028,
+        "total_downloads": 145053,
         "asset_count": 6
       },
       {
@@ -93,7 +93,7 @@
         "published_at": "2025-10-29T02:43:25Z",
         "html_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/tag/v26.0.0-rc.02",
         "prerelease": false,
-        "total_downloads": 214923,
+        "total_downloads": 215065,
         "asset_count": 3
       },
       {
@@ -103,7 +103,7 @@
         "published_at": "2025-10-26T02:08:01Z",
         "html_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/tag/v849",
         "prerelease": false,
-        "total_downloads": 85861,
+        "total_downloads": 85883,
         "asset_count": 1
       }
     ]
@@ -113,7 +113,7 @@
     "stars": 246,
     "forks": 11,
     "description": "A script for building turnip driver as an adrenotool package from mesa repository, scheduled releases per 2 week via github actions.",
-    "fetched_at": "2026-04-25T18:15:33Z",
+    "fetched_at": "2026-04-25T19:19:09Z",
     "releases": [
       {
         "id": 253859852,
@@ -122,7 +122,7 @@
         "published_at": "2025-10-11T23:54:12Z",
         "html_url": "https://github.com/Weab-chan/freedreno_turnip-CI/releases/tag/25.3.0-devel_bbdd688",
         "prerelease": false,
-        "total_downloads": 184051,
+        "total_downloads": 184156,
         "asset_count": 3
       },
       {
@@ -132,7 +132,7 @@
         "published_at": "2025-09-09T04:23:30Z",
         "html_url": "https://github.com/Weab-chan/freedreno_turnip-CI/releases/tag/25.3.0-devel_dcfa4fa",
         "prerelease": false,
-        "total_downloads": 53018,
+        "total_downloads": 53025,
         "asset_count": 4
       },
       {
@@ -142,7 +142,7 @@
         "published_at": "2025-05-07T21:06:27Z",
         "html_url": "https://github.com/Weab-chan/freedreno_turnip-CI/releases/tag/25.2.0-devel_bb61a78",
         "prerelease": false,
-        "total_downloads": 58676,
+        "total_downloads": 58683,
         "asset_count": 4
       },
       {
@@ -152,7 +152,7 @@
         "published_at": "2025-05-05T15:49:37Z",
         "html_url": "https://github.com/Weab-chan/freedreno_turnip-CI/releases/tag/25.2.0-devel_1aa5fd5",
         "prerelease": false,
-        "total_downloads": 5807,
+        "total_downloads": 5813,
         "asset_count": 3
       },
       {
@@ -162,7 +162,7 @@
         "published_at": "2025-05-01T05:39:48Z",
         "html_url": "https://github.com/Weab-chan/freedreno_turnip-CI/releases/tag/25.2.0-devel_615d0c9",
         "prerelease": false,
-        "total_downloads": 4314,
+        "total_downloads": 4319,
         "asset_count": 3
       },
       {
@@ -172,7 +172,7 @@
         "published_at": "2025-04-29T05:54:46Z",
         "html_url": "https://github.com/Weab-chan/freedreno_turnip-CI/releases/tag/25.2.0-devel_26bc35c",
         "prerelease": false,
-        "total_downloads": 3031,
+        "total_downloads": 3036,
         "asset_count": 3
       },
       {
@@ -192,7 +192,7 @@
         "published_at": "2025-03-21T17:38:40Z",
         "html_url": "https://github.com/Weab-chan/freedreno_turnip-CI/releases/tag/25.1.0-devel_5b11c3f",
         "prerelease": false,
-        "total_downloads": 11913,
+        "total_downloads": 11917,
         "asset_count": 3
       },
       {
@@ -202,7 +202,7 @@
         "published_at": "2025-01-22T21:53:11Z",
         "html_url": "https://github.com/Weab-chan/freedreno_turnip-CI/releases/tag/25.0.0-devel_7b949dd",
         "prerelease": false,
-        "total_downloads": 11513,
+        "total_downloads": 11515,
         "asset_count": 3
       },
       {
@@ -212,7 +212,7 @@
         "published_at": "2024-11-29T21:21:51Z",
         "html_url": "https://github.com/Weab-chan/freedreno_turnip-CI/releases/tag/25.0.0-devel_1cd09a0",
         "prerelease": false,
-        "total_downloads": 8386,
+        "total_downloads": 8389,
         "asset_count": 3
       }
     ]
@@ -222,7 +222,7 @@
     "stars": 29,
     "forks": 1,
     "description": "A script for building turnip driver as a magisk module from mesa repository, scheduled releases per 2 week via github actions.",
-    "fetched_at": "2026-04-25T18:15:33Z",
+    "fetched_at": "2026-04-25T19:19:09Z",
     "releases": [
       {
         "id": 298586444,
@@ -258,10 +258,10 @@
   },
   {
     "repo": "StevenMXZ/Adreno-Tools-Drivers",
-    "stars": 521,
+    "stars": 522,
     "forks": 13,
     "description": "A script for building turnip driver as an adrenotool package from mesa repository, scheduled releases per 2 week via github actions.",
-    "fetched_at": "2026-04-25T18:15:33Z",
+    "fetched_at": "2026-04-25T19:19:09Z",
     "releases": [
       {
         "id": 309552624,
@@ -270,7 +270,7 @@
         "published_at": "2026-04-15T20:34:42Z",
         "html_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/tag/v28",
         "prerelease": false,
-        "total_downloads": 9289,
+        "total_downloads": 9333,
         "asset_count": 1
       },
       {
@@ -280,7 +280,7 @@
         "published_at": "2026-04-15T20:35:39Z",
         "html_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/tag/v26.2.0-R1",
         "prerelease": false,
-        "total_downloads": 7387,
+        "total_downloads": 7420,
         "asset_count": 1
       },
       {
@@ -290,7 +290,7 @@
         "published_at": "2026-04-03T18:33:30Z",
         "html_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/tag/v26.1.0_auto",
         "prerelease": false,
-        "total_downloads": 12066,
+        "total_downloads": 12078,
         "asset_count": 1
       },
       {
@@ -300,7 +300,7 @@
         "published_at": "2026-03-30T06:40:17Z",
         "html_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/tag/v27.1",
         "prerelease": false,
-        "total_downloads": 14499,
+        "total_downloads": 14505,
         "asset_count": 1
       },
       {
@@ -310,7 +310,7 @@
         "published_at": "2026-03-30T06:34:28Z",
         "html_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/tag/26.1.0_r6",
         "prerelease": false,
-        "total_downloads": 7596,
+        "total_downloads": 7604,
         "asset_count": 1
       },
       {
@@ -320,7 +320,7 @@
         "published_at": "2026-03-17T20:07:26Z",
         "html_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/tag/v26.1.0-R5",
         "prerelease": false,
-        "total_downloads": 7870,
+        "total_downloads": 7872,
         "asset_count": 1
       },
       {
@@ -330,7 +330,7 @@
         "published_at": "2026-03-07T06:30:28Z",
         "html_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/tag/v863.1",
         "prerelease": false,
-        "total_downloads": 6615,
+        "total_downloads": 6620,
         "asset_count": 1
       },
       {
@@ -340,7 +340,7 @@
         "published_at": "2026-03-08T07:43:23Z",
         "html_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/tag/v849",
         "prerelease": false,
-        "total_downloads": 4354,
+        "total_downloads": 4356,
         "asset_count": 2
       },
       {
@@ -350,7 +350,7 @@
         "published_at": "2026-03-02T19:13:35Z",
         "html_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/tag/v26.1.2",
         "prerelease": false,
-        "total_downloads": 10667,
+        "total_downloads": 10669,
         "asset_count": 1
       },
       {
@@ -360,7 +360,7 @@
         "published_at": "2026-03-01T17:14:50Z",
         "html_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/tag/v26.1.0-R4",
         "prerelease": false,
-        "total_downloads": 6608,
+        "total_downloads": 6610,
         "asset_count": 1
       }
     ]
@@ -370,7 +370,7 @@
     "stars": 289,
     "forks": 10,
     "description": "Highly unstable & sloppy AdrenoTools Turnip builds - use with caution. Targetted at better A8XX support.",
-    "fetched_at": "2026-04-25T18:15:33Z",
+    "fetched_at": "2026-04-25T19:19:09Z",
     "releases": [
       {
         "id": 310893879,
@@ -379,7 +379,7 @@
         "published_at": "2026-04-19T16:11:25Z",
         "html_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/tag/tu_v25.1",
         "prerelease": false,
-        "total_downloads": 15984,
+        "total_downloads": 16098,
         "asset_count": 1
       },
       {
@@ -389,7 +389,7 @@
         "published_at": "2026-04-15T19:11:24Z",
         "html_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/tag/tu_v25",
         "prerelease": false,
-        "total_downloads": 8856,
+        "total_downloads": 8861,
         "asset_count": 1
       },
       {
@@ -399,7 +399,7 @@
         "published_at": "2026-03-28T19:51:33Z",
         "html_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/tag/tu_v24",
         "prerelease": false,
-        "total_downloads": 21821,
+        "total_downloads": 21828,
         "asset_count": 1
       },
       {
@@ -409,7 +409,7 @@
         "published_at": "2026-03-23T21:15:37Z",
         "html_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/tag/tu_vdont_use",
         "prerelease": false,
-        "total_downloads": 4335,
+        "total_downloads": 4336,
         "asset_count": 1
       },
       {
@@ -419,7 +419,7 @@
         "published_at": "2026-03-02T18:22:09Z",
         "html_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/tag/mesa_v26.1.0-git_3",
         "prerelease": false,
-        "total_downloads": 18624,
+        "total_downloads": 18638,
         "asset_count": 1
       },
       {
@@ -429,7 +429,7 @@
         "published_at": "2026-02-13T18:34:04Z",
         "html_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/tag/mesa_v26.1.0-git-hotfix",
         "prerelease": false,
-        "total_downloads": 28951,
+        "total_downloads": 28965,
         "asset_count": 2
       },
       {
@@ -439,7 +439,7 @@
         "published_at": "2026-02-09T09:10:38Z",
         "html_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/tag/mesa_v26.1.0-git",
         "prerelease": false,
-        "total_downloads": 12481,
+        "total_downloads": 12483,
         "asset_count": 2
       },
       {
@@ -449,7 +449,7 @@
         "published_at": "2026-01-30T20:17:01Z",
         "html_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/tag/tu_v23",
         "prerelease": false,
-        "total_downloads": 22672,
+        "total_downloads": 22675,
         "asset_count": 1
       },
       {
@@ -459,7 +459,7 @@
         "published_at": "2026-01-25T10:45:20Z",
         "html_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/tag/tu_v22",
         "prerelease": false,
-        "total_downloads": 14432,
+        "total_downloads": 14434,
         "asset_count": 1
       },
       {
@@ -469,7 +469,7 @@
         "published_at": "2026-01-30T19:58:33Z",
         "html_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/tag/mesa26_v2",
         "prerelease": false,
-        "total_downloads": 6631,
+        "total_downloads": 6632,
         "asset_count": 1
       }
     ]
@@ -479,7 +479,7 @@
     "stars": 39,
     "forks": 3,
     "description": "mesa turnip driver for android",
-    "fetched_at": "2026-04-25T18:15:33Z",
+    "fetched_at": "2026-04-25T19:19:09Z",
     "releases": [
       {
         "id": 279807125,
@@ -488,7 +488,7 @@
         "published_at": "2026-01-26T03:26:49Z",
         "html_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/tag/25.3.4",
         "prerelease": false,
-        "total_downloads": 13099,
+        "total_downloads": 13122,
         "asset_count": 1
       },
       {
@@ -498,7 +498,7 @@
         "published_at": "2026-01-08T03:25:44Z",
         "html_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/tag/25.3.3",
         "prerelease": false,
-        "total_downloads": 1356,
+        "total_downloads": 1358,
         "asset_count": 1
       },
       {
@@ -588,7 +588,7 @@
     "stars": 515,
     "forks": 3,
     "description": "",
-    "fetched_at": "2026-04-25T18:15:33Z",
+    "fetched_at": "2026-04-25T19:19:09Z",
     "releases": [
       {
         "id": 294280768,
@@ -597,7 +597,7 @@
         "published_at": "2026-03-07T18:23:40Z",
         "html_url": "https://github.com/MrPurple666/purple-turnip/releases/tag/vturnip_mrpurple_T26-toasted.adpkg",
         "prerelease": false,
-        "total_downloads": 189841,
+        "total_downloads": 190214,
         "asset_count": 1
       },
       {
@@ -607,7 +607,7 @@
         "published_at": "2026-01-19T11:42:45Z",
         "html_url": "https://github.com/MrPurple666/purple-turnip/releases/tag/vturnip_mrpurple_T24-toasted.adpkg",
         "prerelease": false,
-        "total_downloads": 220422,
+        "total_downloads": 220490,
         "asset_count": 1
       },
       {
@@ -617,7 +617,7 @@
         "published_at": "2026-01-16T17:53:10Z",
         "html_url": "https://github.com/MrPurple666/purple-turnip/releases/tag/vturnip_mrpurple_T23-toasted.adpkg",
         "prerelease": false,
-        "total_downloads": 138308,
+        "total_downloads": 138437,
         "asset_count": 1
       },
       {
@@ -627,7 +627,7 @@
         "published_at": "2025-09-01T20:18:52Z",
         "html_url": "https://github.com/MrPurple666/purple-turnip/releases/tag/vturnip_mrpurple_T22hf-toasted.adpkg",
         "prerelease": false,
-        "total_downloads": 603507,
+        "total_downloads": 603540,
         "asset_count": 1
       },
       {
@@ -637,7 +637,7 @@
         "published_at": "2025-07-26T17:52:48Z",
         "html_url": "https://github.com/MrPurple666/purple-turnip/releases/tag/vturnip_mrpurple_T21-AYANEO.adpkg",
         "prerelease": false,
-        "total_downloads": 166495,
+        "total_downloads": 166507,
         "asset_count": 1
       },
       {
@@ -647,7 +647,7 @@
         "published_at": "2025-07-17T19:49:58Z",
         "html_url": "https://github.com/MrPurple666/purple-turnip/releases/tag/vturnip_mrpurple-T21-toasted.adpkg",
         "prerelease": false,
-        "total_downloads": 76946,
+        "total_downloads": 76957,
         "asset_count": 1
       },
       {
@@ -657,7 +657,7 @@
         "published_at": "2025-06-01T07:33:48Z",
         "html_url": "https://github.com/MrPurple666/purple-turnip/releases/tag/vturnip_mrpurple-T20-toasted.adpkg",
         "prerelease": false,
-        "total_downloads": 58637,
+        "total_downloads": 58651,
         "asset_count": 1
       },
       {
@@ -667,7 +667,7 @@
         "published_at": "2025-06-01T07:35:20Z",
         "html_url": "https://github.com/MrPurple666/purple-turnip/releases/tag/vturnip_mrpurple-T19-toasted.adpkg",
         "prerelease": false,
-        "total_downloads": 209758,
+        "total_downloads": 209814,
         "asset_count": 1
       },
       {
@@ -677,7 +677,7 @@
         "published_at": "2025-06-01T07:20:37Z",
         "html_url": "https://github.com/MrPurple666/purple-turnip/releases/tag/vturnip_mrpurple-T18.5-toasted.adpkg",
         "prerelease": false,
-        "total_downloads": 17705,
+        "total_downloads": 17711,
         "asset_count": 1
       },
       {
@@ -687,7 +687,7 @@
         "published_at": "2025-06-01T07:20:27Z",
         "html_url": "https://github.com/MrPurple666/purple-turnip/releases/tag/vturnip_mrpurple-T18-toasted.adpkg",
         "prerelease": false,
-        "total_downloads": 14152,
+        "total_downloads": 14155,
         "asset_count": 1
       }
     ]
