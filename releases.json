@@ -4,7 +4,7 @@
     "stars": 4928,
     "forks": 133,
     "description": "A repository for Skyline, Strato, Vita3K and Yuzu Android compatible Adreno drivers.",
-    "fetched_at": "2026-04-27T17:32:22Z",
+    "fetched_at": "2026-04-27T18:30:26Z",
     "releases": []
   },
   {
@@ -12,7 +12,7 @@
     "stars": 246,
     "forks": 11,
     "description": "A script for building turnip driver as an adrenotool package from mesa repository, scheduled releases per 2 week via github actions.",
-    "fetched_at": "2026-04-27T17:32:22Z",
+    "fetched_at": "2026-04-27T18:30:26Z",
     "releases": []
   },
   {
@@ -20,46 +20,15 @@
     "stars": 29,
     "forks": 1,
     "description": "A script for building turnip driver as a magisk module from mesa repository, scheduled releases per 2 week via github actions.",
-    "fetched_at": "2026-04-27T17:32:22Z",
-    "releases": [
-      {
-        "id": 298586444,
-        "tag_name": "mesa_v26.1-eden-fix-latest-crash-fix",
-        "name": "Mesa Turnip v26.1-eden-fix-latest-crash-fix",
-        "published_at": "2026-03-18T17:25:13Z",
-        "html_url": "https://github.com/s1mptom/freedreno_turnip-CI/releases/tag/mesa_v26.1-eden-fix-latest-crash-fix",
-        "prerelease": false,
-        "total_downloads": 1691,
-        "asset_count": 1
-      },
-      {
-        "id": 297737177,
-        "tag_name": "mesa_v26.1-eden-fix-latest",
-        "name": "Mesa Turnip v26.1-eden-fix-latest",
-        "published_at": "2026-03-17T01:30:08Z",
-        "html_url": "https://github.com/s1mptom/freedreno_turnip-CI/releases/tag/mesa_v26.1-eden-fix-latest",
-        "prerelease": false,
-        "total_downloads": 40,
-        "asset_count": 1
-      },
-      {
-        "id": 297724767,
-        "tag_name": "mesa_v26.1-eden-fix",
-        "name": "Mesa Turnip v26.1-eden-fix",
-        "published_at": "2026-03-17T00:20:19Z",
-        "html_url": "https://github.com/s1mptom/freedreno_turnip-CI/releases/tag/mesa_v26.1-eden-fix",
-        "prerelease": false,
-        "total_downloads": 27,
-        "asset_count": 1
-      }
-    ]
+    "fetched_at": "2026-04-27T18:30:26Z",
+    "releases": []
   },
   {
     "repo": "StevenMXZ/Adreno-Tools-Drivers",
     "stars": 530,
     "forks": 13,
     "description": "A script for building turnip driver as an adrenotool package from mesa repository, scheduled releases per 2 week via github actions.",
-    "fetched_at": "2026-04-27T17:32:22Z",
+    "fetched_at": "2026-04-27T18:30:26Z",
     "releases": []
   },
   {
@@ -67,7 +36,7 @@
     "stars": 291,
     "forks": 11,
     "description": "Highly unstable & sloppy AdrenoTools Turnip builds - use with caution. Targetted at better A8XX support.",
-    "fetched_at": "2026-04-27T17:32:22Z",
+    "fetched_at": "2026-04-27T18:30:26Z",
     "releases": []
   },
   {
@@ -75,7 +44,7 @@
     "stars": 39,
     "forks": 3,
     "description": "mesa turnip driver for android",
-    "fetched_at": "2026-04-27T17:32:22Z",
+    "fetched_at": "2026-04-27T18:30:26Z",
     "releases": []
   },
   {
@@ -83,7 +52,7 @@
     "stars": 526,
     "forks": 3,
     "description": "",
-    "fetched_at": "2026-04-27T17:32:22Z",
+    "fetched_at": "2026-04-27T18:30:26Z",
     "releases": []
   }
 ]
