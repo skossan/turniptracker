@@ -4,7 +4,7 @@
     "stars": 4928,
     "forks": 133,
     "description": "A repository for Skyline, Strato, Vita3K and Yuzu Android compatible Adreno drivers.",
-    "fetched_at": "2026-04-27T18:30:26Z",
+    "fetched_at": "2026-04-27T19:33:16Z",
     "releases": []
   },
   {
@@ -12,23 +12,155 @@
     "stars": 246,
     "forks": 11,
     "description": "A script for building turnip driver as an adrenotool package from mesa repository, scheduled releases per 2 week via github actions.",
-    "fetched_at": "2026-04-27T18:30:26Z",
-    "releases": []
+    "fetched_at": "2026-04-27T19:33:16Z",
+    "releases": [
+      {
+        "id": 253859852,
+        "tag_name": "25.3.0-devel_bbdd688",
+        "name": "Turnip - 25.3.0-devel - Oct 11, 2025",
+        "published_at": "2025-10-11T23:54:12Z",
+        "html_url": "https://github.com/Weab-chan/freedreno_turnip-CI/releases/tag/25.3.0-devel_bbdd688",
+        "prerelease": false,
+        "total_downloads": 187746,
+        "asset_count": 3
+      },
+      {
+        "id": 245711108,
+        "tag_name": "25.3.0-devel_dcfa4fa",
+        "name": "Turnip - 25.3.0-devel - Sep 09, 2025",
+        "published_at": "2025-09-09T04:23:30Z",
+        "html_url": "https://github.com/Weab-chan/freedreno_turnip-CI/releases/tag/25.3.0-devel_dcfa4fa",
+        "prerelease": false,
+        "total_downloads": 53229,
+        "asset_count": 4
+      },
+      {
+        "id": 217167750,
+        "tag_name": "25.2.0-devel_bb61a78",
+        "name": "Turnip - 25.2.0-devel - May 07, 2025",
+        "published_at": "2025-05-07T21:06:27Z",
+        "html_url": "https://github.com/Weab-chan/freedreno_turnip-CI/releases/tag/25.2.0-devel_bb61a78",
+        "prerelease": false,
+        "total_downloads": 58867,
+        "asset_count": 4
+      },
+      {
+        "id": 216535343,
+        "tag_name": "25.2.0-devel_1aa5fd5",
+        "name": "Turnip - 25.2.0-devel - May 05, 2025",
+        "published_at": "2025-05-05T15:49:37Z",
+        "html_url": "https://github.com/Weab-chan/freedreno_turnip-CI/releases/tag/25.2.0-devel_1aa5fd5",
+        "prerelease": false,
+        "total_downloads": 5875,
+        "asset_count": 3
+      },
+      {
+        "id": 215941523,
+        "tag_name": "25.2.0-devel_615d0c9",
+        "name": "Turnip - 25.2.0-devel - May 01, 2025",
+        "published_at": "2025-05-01T05:39:48Z",
+        "html_url": "https://github.com/Weab-chan/freedreno_turnip-CI/releases/tag/25.2.0-devel_615d0c9",
+        "prerelease": false,
+        "total_downloads": 4359,
+        "asset_count": 3
+      },
+      {
+        "id": 215374678,
+        "tag_name": "25.2.0-devel_26bc35c",
+        "name": "Turnip - 25.2.0-devel - Apr 29, 2025",
+        "published_at": "2025-04-29T05:54:46Z",
+        "html_url": "https://github.com/Weab-chan/freedreno_turnip-CI/releases/tag/25.2.0-devel_26bc35c",
+        "prerelease": false,
+        "total_downloads": 3074,
+        "asset_count": 3
+      },
+      {
+        "id": 215006508,
+        "tag_name": "25.2.0-devel_3493500",
+        "name": "Turnip - 25.2.0-devel - Apr 27, 2025",
+        "published_at": "2025-04-27T04:33:41Z",
+        "html_url": "https://github.com/Weab-chan/freedreno_turnip-CI/releases/tag/25.2.0-devel_3493500",
+        "prerelease": false,
+        "total_downloads": 3070,
+        "asset_count": 3
+      },
+      {
+        "id": 207499204,
+        "tag_name": "25.1.0-devel_5b11c3f",
+        "name": "Turnip - 25.1.0-devel - Mar 21, 2025",
+        "published_at": "2025-03-21T17:38:40Z",
+        "html_url": "https://github.com/Weab-chan/freedreno_turnip-CI/releases/tag/25.1.0-devel_5b11c3f",
+        "prerelease": false,
+        "total_downloads": 12039,
+        "asset_count": 3
+      },
+      {
+        "id": 196212259,
+        "tag_name": "25.0.0-devel_7b949dd",
+        "name": "Turnip - 25.0.0-devel - Jan 22, 2025",
+        "published_at": "2025-01-22T21:53:11Z",
+        "html_url": "https://github.com/Weab-chan/freedreno_turnip-CI/releases/tag/25.0.0-devel_7b949dd",
+        "prerelease": false,
+        "total_downloads": 11578,
+        "asset_count": 3
+      },
+      {
+        "id": 188260682,
+        "tag_name": "25.0.0-devel_1cd09a0",
+        "name": "Turnip - 25.0.0-devel - Nov 29, 2024",
+        "published_at": "2024-11-29T21:21:51Z",
+        "html_url": "https://github.com/Weab-chan/freedreno_turnip-CI/releases/tag/25.0.0-devel_1cd09a0",
+        "prerelease": false,
+        "total_downloads": 8432,
+        "asset_count": 3
+      }
+    ]
   },
   {
     "repo": "s1mptom/freedreno_turnip-CI",
     "stars": 29,
     "forks": 1,
     "description": "A script for building turnip driver as a magisk module from mesa repository, scheduled releases per 2 week via github actions.",
-    "fetched_at": "2026-04-27T18:30:26Z",
-    "releases": []
+    "fetched_at": "2026-04-27T19:33:16Z",
+    "releases": [
+      {
+        "id": 298586444,
+        "tag_name": "mesa_v26.1-eden-fix-latest-crash-fix",
+        "name": "Mesa Turnip v26.1-eden-fix-latest-crash-fix",
+        "published_at": "2026-03-18T17:25:13Z",
+        "html_url": "https://github.com/s1mptom/freedreno_turnip-CI/releases/tag/mesa_v26.1-eden-fix-latest-crash-fix",
+        "prerelease": false,
+        "total_downloads": 1693,
+        "asset_count": 1
+      },
+      {
+        "id": 297737177,
+        "tag_name": "mesa_v26.1-eden-fix-latest",
+        "name": "Mesa Turnip v26.1-eden-fix-latest",
+        "published_at": "2026-03-17T01:30:08Z",
+        "html_url": "https://github.com/s1mptom/freedreno_turnip-CI/releases/tag/mesa_v26.1-eden-fix-latest",
+        "prerelease": false,
+        "total_downloads": 40,
+        "asset_count": 1
+      },
+      {
+        "id": 297724767,
+        "tag_name": "mesa_v26.1-eden-fix",
+        "name": "Mesa Turnip v26.1-eden-fix",
+        "published_at": "2026-03-17T00:20:19Z",
+        "html_url": "https://github.com/s1mptom/freedreno_turnip-CI/releases/tag/mesa_v26.1-eden-fix",
+        "prerelease": false,
+        "total_downloads": 27,
+        "asset_count": 1
+      }
+    ]
   },
   {
     "repo": "StevenMXZ/Adreno-Tools-Drivers",
     "stars": 530,
     "forks": 13,
     "description": "A script for building turnip driver as an adrenotool package from mesa repository, scheduled releases per 2 week via github actions.",
-    "fetched_at": "2026-04-27T18:30:26Z",
+    "fetched_at": "2026-04-27T19:33:16Z",
     "releases": []
   },
   {
@@ -36,23 +168,326 @@
     "stars": 291,
     "forks": 11,
     "description": "Highly unstable & sloppy AdrenoTools Turnip builds - use with caution. Targetted at better A8XX support.",
-    "fetched_at": "2026-04-27T18:30:26Z",
-    "releases": []
+    "fetched_at": "2026-04-27T19:33:16Z",
+    "releases": [
+      {
+        "id": 313648507,
+        "tag_name": "tu_v25.2",
+        "name": "Turnip A8XX v25.2",
+        "published_at": "2026-04-25T21:25:03Z",
+        "html_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/tag/tu_v25.2",
+        "prerelease": false,
+        "total_downloads": 6072,
+        "asset_count": 1
+      },
+      {
+        "id": 310893879,
+        "tag_name": "tu_v25.1",
+        "name": "Turnip A8XX v25.1",
+        "published_at": "2026-04-19T16:11:25Z",
+        "html_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/tag/tu_v25.1",
+        "prerelease": false,
+        "total_downloads": 16916,
+        "asset_count": 1
+      },
+      {
+        "id": 309520208,
+        "tag_name": "tu_v25",
+        "name": "Turnip A8XX v25",
+        "published_at": "2026-04-15T19:11:24Z",
+        "html_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/tag/tu_v25",
+        "prerelease": false,
+        "total_downloads": 9264,
+        "asset_count": 1
+      },
+      {
+        "id": 302739331,
+        "tag_name": "tu_v24",
+        "name": "Turnip A8XX v24",
+        "published_at": "2026-03-28T19:51:33Z",
+        "html_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/tag/tu_v24",
+        "prerelease": false,
+        "total_downloads": 22155,
+        "asset_count": 1
+      },
+      {
+        "id": 300411631,
+        "tag_name": "tu_vdont_use",
+        "name": "Turnip A8XX vdont_use",
+        "published_at": "2026-03-23T21:15:37Z",
+        "html_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/tag/tu_vdont_use",
+        "prerelease": false,
+        "total_downloads": 4395,
+        "asset_count": 1
+      },
+      {
+        "id": 292196084,
+        "tag_name": "mesa_v26.1.0-git_3",
+        "name": "Mesa Turnip v26.1.0-git_3",
+        "published_at": "2026-03-02T18:22:09Z",
+        "html_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/tag/mesa_v26.1.0-git_3",
+        "prerelease": false,
+        "total_downloads": 18951,
+        "asset_count": 1
+      },
+      {
+        "id": 286197442,
+        "tag_name": "mesa_v26.1.0-git-hotfix",
+        "name": "Mesa Turnip v26.1.0-git-hotfix",
+        "published_at": "2026-02-13T18:34:04Z",
+        "html_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/tag/mesa_v26.1.0-git-hotfix",
+        "prerelease": false,
+        "total_downloads": 29197,
+        "asset_count": 2
+      },
+      {
+        "id": 284324352,
+        "tag_name": "mesa_v26.1.0-git",
+        "name": "Mesa Turnip v26.1.0-git",
+        "published_at": "2026-02-09T09:10:38Z",
+        "html_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/tag/mesa_v26.1.0-git",
+        "prerelease": false,
+        "total_downloads": 12607,
+        "asset_count": 2
+      },
+      {
+        "id": 281650102,
+        "tag_name": "tu_v23",
+        "name": "Turnip A8XX v23",
+        "published_at": "2026-01-30T20:17:01Z",
+        "html_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/tag/tu_v23",
+        "prerelease": false,
+        "total_downloads": 22800,
+        "asset_count": 1
+      },
+      {
+        "id": 279720503,
+        "tag_name": "tu_v22",
+        "name": "Turnip A8XX v22",
+        "published_at": "2026-01-25T10:45:20Z",
+        "html_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/tag/tu_v22",
+        "prerelease": false,
+        "total_downloads": 14536,
+        "asset_count": 1
+      }
+    ]
   },
   {
     "repo": "nihui/mesa-turnip-android-driver",
     "stars": 39,
     "forks": 3,
     "description": "mesa turnip driver for android",
-    "fetched_at": "2026-04-27T18:30:26Z",
-    "releases": []
+    "fetched_at": "2026-04-27T19:33:16Z",
+    "releases": [
+      {
+        "id": 279807125,
+        "tag_name": "25.3.4",
+        "name": "mesa turnip driver for android 25.3.4",
+        "published_at": "2026-01-26T03:26:49Z",
+        "html_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/tag/25.3.4",
+        "prerelease": false,
+        "total_downloads": 14512,
+        "asset_count": 1
+      },
+      {
+        "id": 275023712,
+        "tag_name": "25.3.3",
+        "name": "mesa turnip driver for android 25.3.3",
+        "published_at": "2026-01-08T03:25:44Z",
+        "html_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/tag/25.3.3",
+        "prerelease": false,
+        "total_downloads": 1542,
+        "asset_count": 1
+      },
+      {
+        "id": 259214071,
+        "tag_name": "25.2.6",
+        "name": "mesa turnip driver for android 25.2.6",
+        "published_at": "2025-11-03T11:11:17Z",
+        "html_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/tag/25.2.6",
+        "prerelease": false,
+        "total_downloads": 959,
+        "asset_count": 1
+      },
+      {
+        "id": 253899281,
+        "tag_name": "edge",
+        "name": "mesa turnip driver for android edge",
+        "published_at": "2025-10-12T13:05:16Z",
+        "html_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/tag/edge",
+        "prerelease": false,
+        "total_downloads": 240,
+        "asset_count": 1
+      },
+      {
+        "id": 253605326,
+        "tag_name": "25.2.4",
+        "name": "mesa turnip driver for android 25.2.4",
+        "published_at": "2025-10-10T10:56:30Z",
+        "html_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/tag/25.2.4",
+        "prerelease": false,
+        "total_downloads": 179,
+        "asset_count": 1
+      },
+      {
+        "id": 251296237,
+        "tag_name": "25.2.3",
+        "name": "mesa turnip driver for android 25.2.3",
+        "published_at": "2025-10-01T02:13:35Z",
+        "html_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/tag/25.2.3",
+        "prerelease": false,
+        "total_downloads": 230,
+        "asset_count": 1
+      },
+      {
+        "id": 246661469,
+        "tag_name": "25.2.2",
+        "name": "mesa turnip driver for android 25.2.2",
+        "published_at": "2025-09-12T03:07:42Z",
+        "html_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/tag/25.2.2",
+        "prerelease": false,
+        "total_downloads": 171,
+        "asset_count": 1
+      },
+      {
+        "id": 231650529,
+        "tag_name": "25.1.5",
+        "name": "mesa turnip driver for android 25.1.5",
+        "published_at": "2025-07-11T02:36:45Z",
+        "html_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/tag/25.1.5",
+        "prerelease": false,
+        "total_downloads": 331,
+        "asset_count": 1
+      },
+      {
+        "id": 223937878,
+        "tag_name": "25.1.3",
+        "name": "mesa turnip driver for android 25.1.3",
+        "published_at": "2025-06-09T07:23:37Z",
+        "html_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/tag/25.1.3",
+        "prerelease": false,
+        "total_downloads": 200,
+        "asset_count": 1
+      },
+      {
+        "id": 223339307,
+        "tag_name": "25.1.2",
+        "name": "mesa turnip driver for android 25.1.2",
+        "published_at": "2025-06-05T11:14:55Z",
+        "html_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/tag/25.1.2",
+        "prerelease": false,
+        "total_downloads": 164,
+        "asset_count": 1
+      }
+    ]
   },
   {
     "repo": "MrPurple666/purple-turnip",
     "stars": 526,
     "forks": 3,
     "description": "",
-    "fetched_at": "2026-04-27T18:30:26Z",
-    "releases": []
+    "fetched_at": "2026-04-27T19:33:16Z",
+    "releases": [
+      {
+        "id": 313850327,
+        "tag_name": "vturnip_mrpurple_T28-toasted.adpkg",
+        "name": "turnip_mrpurple_T28-toasted.adpkg",
+        "published_at": "2026-04-27T01:41:35Z",
+        "html_url": "https://github.com/MrPurple666/purple-turnip/releases/tag/vturnip_mrpurple_T28-toasted.adpkg",
+        "prerelease": false,
+        "total_downloads": 8184,
+        "asset_count": 1
+      },
+      {
+        "id": 313647982,
+        "tag_name": "vturnip_mrpurple_T27-toasted.adpkg",
+        "name": "turnip_mrpurple_T27-toasted.adpkg",
+        "published_at": "2026-04-25T21:20:30Z",
+        "html_url": "https://github.com/MrPurple666/purple-turnip/releases/tag/vturnip_mrpurple_T27-toasted.adpkg",
+        "prerelease": false,
+        "total_downloads": 16020,
+        "asset_count": 1
+      },
+      {
+        "id": 294280768,
+        "tag_name": "vturnip_mrpurple_T26-toasted.adpkg",
+        "name": "turnip_mrpurple_T26-toasted.adpkg",
+        "published_at": "2026-03-07T18:23:40Z",
+        "html_url": "https://github.com/MrPurple666/purple-turnip/releases/tag/vturnip_mrpurple_T26-toasted.adpkg",
+        "prerelease": false,
+        "total_downloads": 194127,
+        "asset_count": 1
+      },
+      {
+        "id": 277894969,
+        "tag_name": "vturnip_mrpurple_T24-toasted.adpkg",
+        "name": "turnip_mrpurple_T24-toasted.adpkg",
+        "published_at": "2026-01-19T11:42:45Z",
+        "html_url": "https://github.com/MrPurple666/purple-turnip/releases/tag/vturnip_mrpurple_T24-toasted.adpkg",
+        "prerelease": false,
+        "total_downloads": 222892,
+        "asset_count": 1
+      },
+      {
+        "id": 277485865,
+        "tag_name": "vturnip_mrpurple_T23-toasted.adpkg",
+        "name": "turnip_mrpurple_T23-toasted.adpkg",
+        "published_at": "2026-01-16T17:53:10Z",
+        "html_url": "https://github.com/MrPurple666/purple-turnip/releases/tag/vturnip_mrpurple_T23-toasted.adpkg",
+        "prerelease": false,
+        "total_downloads": 143511,
+        "asset_count": 1
+      },
+      {
+        "id": 243955998,
+        "tag_name": "vturnip_mrpurple_T22hf-toasted.adpkg",
+        "name": "turnip_mrpurple_T22hf-toasted.adpkg",
+        "published_at": "2025-09-01T20:18:52Z",
+        "html_url": "https://github.com/MrPurple666/purple-turnip/releases/tag/vturnip_mrpurple_T22hf-toasted.adpkg",
+        "prerelease": false,
+        "total_downloads": 604778,
+        "asset_count": 1
+      },
+      {
+        "id": 235390523,
+        "tag_name": "vturnip_mrpurple_T21-AYANEO.adpkg",
+        "name": "turnip_mrpurple_T21-AYANEO.adpkg",
+        "published_at": "2025-07-26T17:52:48Z",
+        "html_url": "https://github.com/MrPurple666/purple-turnip/releases/tag/vturnip_mrpurple_T21-AYANEO.adpkg",
+        "prerelease": false,
+        "total_downloads": 166999,
+        "asset_count": 1
+      },
+      {
+        "id": 233303819,
+        "tag_name": "vturnip_mrpurple-T21-toasted.adpkg",
+        "name": "turnip_mrpurple-T21-toasted.adpkg",
+        "published_at": "2025-07-17T19:49:58Z",
+        "html_url": "https://github.com/MrPurple666/purple-turnip/releases/tag/vturnip_mrpurple-T21-toasted.adpkg",
+        "prerelease": false,
+        "total_downloads": 77298,
+        "asset_count": 1
+      },
+      {
+        "id": 222265687,
+        "tag_name": "vturnip_mrpurple-T20-toasted.adpkg",
+        "name": "turnip_mrpurple-T20-toasted.adpkg",
+        "published_at": "2025-06-01T07:33:48Z",
+        "html_url": "https://github.com/MrPurple666/purple-turnip/releases/tag/vturnip_mrpurple-T20-toasted.adpkg",
+        "prerelease": false,
+        "total_downloads": 59083,
+        "asset_count": 1
+      },
+      {
+        "id": 222265750,
+        "tag_name": "vturnip_mrpurple-T19-toasted.adpkg",
+        "name": "turnip_mrpurple-T19-toasted.adpkg",
+        "published_at": "2025-06-01T07:35:20Z",
+        "html_url": "https://github.com/MrPurple666/purple-turnip/releases/tag/vturnip_mrpurple-T19-toasted.adpkg",
+        "prerelease": false,
+        "total_downloads": 212219,
+        "asset_count": 1
+      }
+    ]
   }
 ]
