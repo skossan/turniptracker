@@ -30,6 +30,7 @@ jobs:
             "whitebelyash/freedreno_turnip-CI"
             "nihui/mesa-turnip-android-driver"
             "MrPurple666/purple-turnip"
+            "The412Banner/Banners-Turnip"
           )
 
           OUTPUT="[]"
