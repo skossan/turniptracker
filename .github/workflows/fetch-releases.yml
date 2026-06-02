@@ -22,8 +22,6 @@ jobs:
           set -e
 
           REPOS=(
-            "K11MCH1/AdrenoToolsDrivers"
-            "Weab-chan/freedreno_turnip-CI"
             "s1mptom/freedreno_turnip-CI"
             "StevenMXZ/Adreno-Tools-Drivers"
             "whitebelyash/AdrenoToolsDrivers"
