@@ -4,10 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Turnip Tracker — Adreno Driver Releases</title>
+  <meta name="description" content="Live download, star, and release tracker for Turnip (Adreno Mesa Vulkan) driver builds across GitHub repositories.">
+  <meta property="og:title" content="Turnip Tracker — Adreno Driver Releases">
+  <meta property="og:description" content="Live download, star, and release tracker for Turnip (Adreno Mesa Vulkan) driver builds across GitHub repositories.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="turnip.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Turnip Tracker — Adreno Driver Releases">
+  <meta name="twitter:description" content="Live download, star, and release tracker for Turnip (Adreno Mesa Vulkan) driver builds across GitHub repositories.">
   <link rel="icon" type="image/png" href="turnip.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
       --bg:        #1a1d24;
@@ -24,12 +32,36 @@
       --card-glow: 0 0 0 1px var(--border), 0 4px 32px rgba(0,229,255,0.04);
     }
 
+    html[data-theme="light"] {
+      --bg:        #f4f6f9;
+      --bg2:       #ffffff;
+      --bg3:       #eaedf2;
+      --border:    #d7dce3;
+      --accent:    #0091a8;
+      --accent2:   #7c3aed;
+      --green:     #16a34a;
+      --yellow:    #b45309;
+      --red:       #dc2626;
+      --text:      #1a1d24;
+      --muted:     #5b6573;
+      --card-glow: 0 0 0 1px var(--border), 0 4px 24px rgba(0,0,0,0.04);
+    }
+
+    html[data-theme="light"] body::before { opacity: 0.25; }
+    html[data-theme="light"] body::after {
+      background-image:
+        linear-gradient(rgba(0,0,0,0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,0,0,0.025) 1px, transparent 1px);
+    }
+    html[data-theme="light"] .logo-icon { box-shadow: 0 0 16px rgba(0,145,168,0.25); }
+    html[data-theme="light"] .tab.active { color: #fff; }
+
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
       background: var(--bg);
       color: var(--text);
-      font-family: 'Syne', sans-serif;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
       min-height: 100vh;
       overflow-x: hidden;
     }
@@ -128,11 +160,13 @@
     }
 
     .badge.live { border-color: var(--green); color: var(--green); }
-    .badge.live::before {
+    .badge.stale { border-color: var(--yellow); color: var(--yellow); }
+    .badge.dead { border-color: var(--red); color: var(--red); }
+    .badge.live::before, .badge.stale::before, .badge.dead::before {
       content: '';
       width: 6px; height: 6px;
       border-radius: 50%;
-      background: var(--green);
+      background: currentColor;
       animation: pulse 2s infinite;
     }
 
@@ -169,6 +203,33 @@
       border-color: var(--accent);
       font-weight: 700;
     }
+
+    .search-box {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.78rem;
+      padding: 7px 14px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: var(--bg2);
+      color: var(--text);
+      margin-left: auto;
+      min-width: 160px;
+    }
+    .search-box::placeholder { color: var(--muted); }
+    .search-box:focus { outline: none; border-color: var(--accent); }
+
+    .theme-toggle {
+      font-size: 0.95rem;
+      padding: 6px 12px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: var(--bg2);
+      color: var(--muted);
+      cursor: pointer;
+      transition: all 0.15s;
+      line-height: 1;
+    }
+    .theme-toggle:hover { border-color: var(--accent); color: var(--accent); }
 
     /* ── summary cards ── */
     .summary-grid {
@@ -308,6 +369,57 @@
 
     .release-row:last-child { border-bottom: none; }
     .release-row:hover { background: var(--bg3); }
+    .release-row.clickable { cursor: pointer; }
+
+    .release-row-wrap:last-child .release-row { border-bottom: none; }
+    .release-row-wrap:has(.asset-list.open) .release-row { border-bottom: 1px solid var(--border); }
+
+    .asset-list {
+      display: none;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      padding: 4px 24px 10px 24px;
+    }
+    .asset-list.open { display: block; }
+
+    .asset-row {
+      display: grid;
+      grid-template-columns: 1fr auto auto auto;
+      gap: 12px;
+      align-items: center;
+      padding: 7px 0 7px 16px;
+      font-size: 0.76rem;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--muted);
+      border-left: 2px solid var(--border);
+    }
+
+    .asset-name {
+      color: var(--text);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .asset-size { white-space: nowrap; }
+    .asset-dl { white-space: nowrap; color: var(--yellow); }
+
+    .copy-btn {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      border-radius: 5px;
+      padding: 3px 9px;
+      font-size: 0.7rem;
+      font-family: 'JetBrains Mono', monospace;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.15s;
+    }
+    .copy-btn:hover { border-color: var(--accent); color: var(--accent); }
+    .copy-btn.copied { border-color: var(--green); color: var(--green); }
+
+    .sparkline { flex-shrink: 0; opacity: 0.85; }
 
     .release-name {
       font-size: 0.88rem;
@@ -416,10 +528,18 @@
       .release-row .dl-bar-wrap,
       .release-row .release-date { display: none; }
       .repo-stats { display: none; }
+      .asset-row { grid-template-columns: 1fr; gap: 4px; padding: 8px 0 8px 16px; }
     }
   </style>
 </head>
 <body>
+<script>
+  (function() {
+    const saved = localStorage.getItem('turnip-theme');
+    const theme = saved || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+</script>
 <div class="wrap">
 
   <!-- Header -->
@@ -437,9 +557,11 @@
 
   <!-- Sort controls -->
   <div class="controls">
-    <button class="tab active" onclick="setSort('downloads')">⬇️ Downloads</button>
-    <button class="tab" onclick="setSort('stars')">⭐ Stars</button>
-    <button class="tab" onclick="setSort('recent')">🕒 Recent</button>
+    <button class="tab" data-mode="downloads" onclick="setSort('downloads', event)">⬇️ Downloads</button>
+    <button class="tab" data-mode="stars" onclick="setSort('stars', event)">⭐ Stars</button>
+    <button class="tab" data-mode="recent" onclick="setSort('recent', event)">🕒 Recent</button>
+    <input type="search" id="search-box" class="search-box" placeholder="filter repos…" oninput="setSearch(this.value)" aria-label="Filter repos">
+    <button class="theme-toggle" id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle light/dark theme" title="Toggle light/dark theme">🌙</button>
   </div>
 
   <!-- Summary stats -->
@@ -460,8 +582,20 @@
 </div>
 
 <script>
+  syncThemeButton();
+
   let allData = [];
-  let sortMode = 'downloads';
+  const urlParams = new URLSearchParams(location.search);
+  let sortMode = urlParams.get('sort') || localStorage.getItem('turnip-sort') || 'downloads';
+  let searchQuery = (urlParams.get('q') || '').toLowerCase();
+
+  function syncUrl() {
+    const params = new URLSearchParams();
+    if (sortMode !== 'downloads') params.set('sort', sortMode);
+    if (searchQuery) params.set('q', searchQuery);
+    const qs = params.toString();
+    history.replaceState(null, '', qs ? `?${qs}` : location.pathname);
+  }
 
   // ── helpers ────────────────────────────────────────────────
   function fmt(n) {
@@ -486,6 +620,48 @@
     return new Date(iso).toLocaleDateString('en-US', { year:'numeric', month:'short', day:'numeric' });
   }
 
+  function formatBytes(n) {
+    if (!n) return '—';
+    if (n >= 1_073_741_824) return (n / 1_073_741_824).toFixed(1) + ' GB';
+    if (n >= 1_048_576)     return (n / 1_048_576).toFixed(1)     + ' MB';
+    if (n >= 1024)          return (n / 1024).toFixed(1)          + ' KB';
+    return n + ' B';
+  }
+
+  function renderSparkline(values) {
+    const w = 70, h = 20, pad = 2;
+    const max = Math.max(...values, 1);
+    const min = Math.min(...values, 0);
+    const range = max - min || 1;
+    const stepX = (w - pad * 2) / (values.length - 1);
+    const points = values.map((v, i) => {
+      const x = pad + i * stepX;
+      const y = h - pad - ((v - min) / range) * (h - pad * 2);
+      return `${x.toFixed(1)},${y.toFixed(1)}`;
+    }).join(' ');
+    return `<svg class="sparkline" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" title="downloads per release trend">
+      <polyline points="${points}" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>`;
+  }
+
+  function toggleAssets(rowEl) {
+    const list = rowEl.nextElementSibling;
+    if (!list || !list.classList.contains('asset-list')) return;
+    const open = list.classList.toggle('open');
+    rowEl.setAttribute('aria-expanded', open);
+  }
+
+  function copyAssetUrl(evt, btn) {
+    evt.stopPropagation();
+    const url = btn.dataset.url;
+    navigator.clipboard.writeText(url).then(() => {
+      const original = btn.textContent;
+      btn.textContent = 'copied!';
+      btn.classList.add('copied');
+      setTimeout(() => { btn.textContent = original; btn.classList.remove('copied'); }, 1500);
+    });
+  }
+
   function totalDownloads(repo) {
     return repo.releases.reduce((s, r) => s + r.total_downloads, 0);
   }
@@ -496,15 +672,49 @@
   }
 
   // ── sort ───────────────────────────────────────────────────
-  function setSort(mode) {
+  function setSort(mode, evt) {
     sortMode = mode;
-    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-    event.target.classList.add('active');
+    localStorage.setItem('turnip-sort', mode);
+    syncUrl();
+    syncTabs();
     render();
   }
 
+  function toggleTheme() {
+    const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+    const next = isLight ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('turnip-theme', next);
+    syncThemeButton();
+  }
+
+  function syncThemeButton() {
+    const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+    document.getElementById('theme-toggle').textContent = isLight ? '☀️' : '🌙';
+  }
+
+  function syncTabs() {
+    document.querySelectorAll('.tab').forEach(t => {
+      t.classList.toggle('active', t.dataset.mode === sortMode);
+    });
+  }
+
+  function setSearch(value) {
+    searchQuery = value.trim().toLowerCase();
+    syncUrl();
+    render();
+  }
+
+  function filtered(data) {
+    if (!searchQuery) return data;
+    return data.filter(r =>
+      r.repo.toLowerCase().includes(searchQuery) ||
+      (r.description || '').toLowerCase().includes(searchQuery)
+    );
+  }
+
   function sorted(data) {
-    return [...data].sort((a, b) => {
+    return [...filtered(data)].sort((a, b) => {
       if (sortMode === 'downloads') return totalDownloads(b) - totalDownloads(a);
       if (sortMode === 'stars')     return b.stars - a.stars;
       if (sortMode === 'recent')    return latestDate(b) - latestDate(a);
@@ -518,7 +728,7 @@
     const data = sorted(allData);
 
     if (!data.length) {
-      list.innerHTML = `<div class="state-msg"><div class="big">🔍</div>No data found.</div>`;
+      list.innerHTML = `<div class="state-msg"><div class="big">🔍</div>${searchQuery ? 'No repos match your filter.' : 'No data found.'}</div>`;
       return;
     }
 
@@ -531,26 +741,42 @@
       const repoUrl = `https://github.com/${repo.repo}`;
       const openByDefault = idx === 0;
 
-      const rows = repo.releases.map(r => {
+      const rows = repo.releases.map((r, rIdx) => {
         const pct = Math.round((r.total_downloads / maxDl) * 100);
+        const assets = r.assets || [];
+        const hasAssets = assets.length > 0;
+        const assetRows = assets.map(a => `
+          <div class="asset-row">
+            <span class="asset-name" title="${escHtml(a.name)}">${escHtml(a.name)}</span>
+            <span class="asset-size">${formatBytes(a.size)}</span>
+            <span class="asset-dl">⬇️ ${fmt(a.download_count)}</span>
+            <button class="copy-btn" data-url="${escHtml(a.browser_download_url)}" onclick="copyAssetUrl(event, this)">copy link</button>
+          </div>`).join('');
+
         return `
-          <div class="release-row">
-            <div>
-              <div class="release-name"><a href="${r.html_url}" target="_blank" rel="noopener">${escHtml(r.name || r.tag_name)}</a></div>
-              <div class="release-date">${shortDate(r.published_at)} · ${relDate(r.published_at)}</div>
+          <div class="release-row-wrap">
+            <div class="release-row ${hasAssets ? 'clickable' : ''}" ${hasAssets ? `onclick="toggleAssets(this)" role="button" tabindex="0" aria-expanded="false" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleAssets(this);}"` : ''}>
+              <div>
+                <div class="release-name"><a href="${r.html_url}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${escHtml(r.name || r.tag_name)}</a></div>
+                <div class="release-date">${shortDate(r.published_at)} · ${relDate(r.published_at)}</div>
+              </div>
+              <div class="dl-bar-wrap"><div class="dl-bar" style="width:${pct}%"></div></div>
+              <div class="dl-count">⬇️ ${fmt(r.total_downloads)}</div>
+              <div>${r.prerelease
+                ? '<span class="pre-badge">pre-release</span>'
+                : '<span class="stable-badge">stable</span>'}</div>
+              <div class="release-date">${r.asset_count} asset${r.asset_count !== 1 ? 's' : ''}${hasAssets ? ' ▾' : ''}</div>
             </div>
-            <div class="dl-bar-wrap"><div class="dl-bar" style="width:${pct}%"></div></div>
-            <div class="dl-count">⬇️ ${fmt(r.total_downloads)}</div>
-            <div>${r.prerelease
-              ? '<span class="pre-badge">pre-release</span>'
-              : '<span class="stable-badge">stable</span>'}</div>
-            <div class="release-date">${r.asset_count} asset${r.asset_count !== 1 ? 's' : ''}</div>
+            ${hasAssets ? `<div class="asset-list">${assetRows}</div>` : ''}
           </div>`;
       }).join('');
 
+      const trend = repo.releases.slice(0, 12).reverse().map(r => r.total_downloads);
+      const sparkline = trend.length > 1 ? renderSparkline(trend) : '';
+
       return `
         <div class="repo-card">
-          <div class="repo-header" onclick="toggleCard(this)">
+          <div class="repo-header" role="button" tabindex="0" aria-expanded="${openByDefault}" onclick="toggleCard(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleCard(this);}">
             <div>
               <div class="repo-name"><a href="${repoUrl}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${escHtml(repo.repo)}</a></div>
               ${repo.description ? `<div class="repo-desc">${escHtml(repo.description)}</div>` : ''}
@@ -561,8 +787,9 @@
                 <span class="repo-stat">⭐ <span class="num">${fmt(repo.stars)}</span></span>
                 <span class="repo-stat">🍴 <span class="num">${fmt(repo.forks)}</span></span>
                 <span class="repo-stat">⬇️ <span class="num">${fmt(dlTotal)}</span></span>
+                ${sparkline}
               </div>
-              <button class="toggle-btn">${openByDefault ? 'collapse ▲' : 'expand ▼'}</button>
+              <button class="toggle-btn" tabindex="-1">${openByDefault ? 'collapse ▲' : 'expand ▼'}</button>
             </div>
           </div>
           <div class="releases-body ${openByDefault ? 'open' : ''}">
@@ -576,6 +803,7 @@
     const body = header.nextElementSibling;
     const btn  = header.querySelector('.toggle-btn');
     const open = body.classList.toggle('open');
+    header.setAttribute('aria-expanded', open);
     btn.textContent = open ? 'collapse ▲' : 'expand ▼';
   }
 
@@ -626,8 +854,24 @@
       if (fetchedAt) {
         document.getElementById('fetch-time').textContent = 'updated ' + relDate(fetchedAt);
         document.getElementById('footer-time').textContent = 'Last fetch: ' + new Date(fetchedAt).toUTCString();
+
+        const ageHours = (Date.now() - new Date(fetchedAt).getTime()) / 3600000;
+        const liveBadge = document.getElementById('live-badge');
+        liveBadge.classList.remove('live', 'stale', 'dead');
+        if (ageHours < 24) {
+          liveBadge.classList.add('live');
+          liveBadge.textContent = 'data current';
+        } else if (ageHours < 72) {
+          liveBadge.classList.add('stale');
+          liveBadge.textContent = 'data stale';
+        } else {
+          liveBadge.classList.add('dead');
+          liveBadge.textContent = 'data outdated';
+        }
       }
 
+      syncTabs();
+      document.getElementById('search-box').value = searchQuery;
       renderSummary();
       render();
     } catch (err) {

@@ -110,7 +110,13 @@ jobs:
                 html_url: .html_url,
                 prerelease: (.prerelease // false),
                 total_downloads: ([.assets[]?.download_count] | add // 0),
-                asset_count: (.assets | length // 0)
+                asset_count: (.assets | length // 0),
+                assets: ((.assets // []) | map({
+                  name: .name,
+                  size: .size,
+                  download_count: .download_count,
+                  browser_download_url: .browser_download_url
+                }))
               })
             }')
 
