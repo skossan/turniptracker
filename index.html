@@ -523,6 +523,15 @@
       gap: 8px;
     }
 
+    footer a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
     @media (max-width: 640px) {
       .release-row { grid-template-columns: 1fr auto; }
       .release-row .dl-bar-wrap,
@@ -576,8 +585,8 @@
   </div>
 
   <footer>
-    <span>Data fetched via GitHub Actions</span>
-    <span id="footer-time"></span>
+    <span>Turnip Tracker — release &amp; download stats for tracked repos</span>
+    <a href="https://github.com/skossan/turniptracker" target="_blank" rel="noopener">source on GitHub</a>
   </footer>
 </div>
 
@@ -816,6 +825,7 @@
     const totalDl   = allData.reduce((s, r) => s + totalDownloads(r), 0);
     const totalRel  = allData.reduce((s, r) => s + r.releases.length, 0);
     const totalStars= allData.reduce((s, r) => s + r.stars, 0);
+    const totalForks= allData.reduce((s, r) => s + r.forks, 0);
     const mostDl    = allData.reduce((best, r) => totalDownloads(r) > totalDownloads(best) ? r : best, allData[0]);
 
     document.getElementById('summary-grid').innerHTML = `
@@ -833,6 +843,11 @@
         <div class="stat-label">Total Stars</div>
         <div class="stat-value">${fmt(totalStars)}</div>
         <div class="stat-sub">combined GitHub stars</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Total Forks</div>
+        <div class="stat-value">${fmt(totalForks)}</div>
+        <div class="stat-sub">combined GitHub forks</div>
       </div>
       <div class="stat-card">
         <div class="stat-label">Most Downloaded</div>
@@ -853,7 +868,6 @@
       const fetchedAt = allData[0]?.fetched_at;
       if (fetchedAt) {
         document.getElementById('fetch-time').textContent = 'updated ' + relDate(fetchedAt);
-        document.getElementById('footer-time').textContent = 'Last fetch: ' + new Date(fetchedAt).toUTCString();
 
         const ageHours = (Date.now() - new Date(fetchedAt).getTime()) / 3600000;
         const liveBadge = document.getElementById('live-badge');
