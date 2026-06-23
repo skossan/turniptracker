@@ -560,6 +560,7 @@
     <p class="subtitle">// Adreno Mesa Vulkan driver release monitor</p>
     <div class="meta-row">
       <span class="badge live" id="live-badge">data current</span>
+      <span class="badge" id="workflow-badge" style="display:none"></span>
       <span class="badge" id="fetch-time">—</span>
     </div>
   </header>
@@ -857,6 +858,33 @@
     `;
   }
 
+  // ── workflow health badge ──────────────────────────────────
+  async function checkWorkflowHealth() {
+    const badge = document.getElementById('workflow-badge');
+    try {
+      const res = await fetch('https://api.github.com/repos/skossan/turniptracker/actions/workflows/fetch-releases.yml/runs?per_page=1');
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+      const run = data.workflow_runs?.[0];
+      if (!run) return;
+
+      badge.classList.remove('live', 'stale', 'dead');
+      badge.style.display = '';
+      if (run.status !== 'completed') {
+        badge.classList.add('stale');
+        badge.textContent = 'fetch job running';
+      } else if (run.conclusion === 'success') {
+        badge.classList.add('live');
+        badge.textContent = 'fetch job ok';
+      } else {
+        badge.classList.add('dead');
+        badge.textContent = 'fetch job failing';
+      }
+    } catch (err) {
+      // GitHub API may be rate-limited or unreachable; fail silently, badge stays hidden
+    }
+  }
+
   // ── load data ──────────────────────────────────────────────
   async function load() {
     try {
@@ -888,6 +916,7 @@
       document.getElementById('search-box').value = searchQuery;
       renderSummary();
       render();
+      checkWorkflowHealth();
     } catch (err) {
       document.getElementById('repo-list').innerHTML = `
         <div class="state-msg">
