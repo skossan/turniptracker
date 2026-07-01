@@ -4,7 +4,7 @@
     "stars": 42,
     "forks": 2,
     "description": "A script for building turnip driver as a magisk module from mesa repository, scheduled releases per 2 week via github actions.",
-    "fetched_at": "2026-07-01T19:31:16Z",
+    "fetched_at": "2026-07-01T20:32:24Z",
     "releases": [
       {
         "id": 298586444,
@@ -64,10 +64,10 @@
   },
   {
     "repo": "StevenMXZ/Adreno-Tools-Drivers",
-    "stars": 691,
+    "stars": 692,
     "forks": 19,
     "description": "A script for building turnip driver as an adrenotool package from mesa repository, scheduled releases per 2 week via github actions.",
-    "fetched_at": "2026-07-01T19:31:16Z",
+    "fetched_at": "2026-07-01T20:32:24Z",
     "releases": [
       {
         "id": 328285187,
@@ -76,13 +76,13 @@
         "published_at": "2026-05-23T10:43:36Z",
         "html_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/tag/v863.1_a7xx",
         "prerelease": false,
-        "total_downloads": 34648,
+        "total_downloads": 34694,
         "asset_count": 1,
         "assets": [
           {
             "name": "v863.1.zip",
             "size": 19871206,
-            "download_count": 34648,
+            "download_count": 34694,
             "browser_download_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/download/v863.1_a7xx/v863.1.zip"
           }
         ]
@@ -94,13 +94,13 @@
         "published_at": "2026-06-09T12:33:57Z",
         "html_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/tag/v32",
         "prerelease": false,
-        "total_downloads": 21717,
+        "total_downloads": 21764,
         "asset_count": 1,
         "assets": [
           {
             "name": "Turnip_Gen8_V32.zip",
             "size": 2759975,
-            "download_count": 21717,
+            "download_count": 21764,
             "browser_download_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/download/v32/Turnip_Gen8_V32.zip"
           }
         ]
@@ -112,19 +112,19 @@
         "published_at": "2026-06-25T20:05:24Z",
         "html_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/tag/v26.2.0-R7",
         "prerelease": false,
-        "total_downloads": 4388,
+        "total_downloads": 4445,
         "asset_count": 2,
         "assets": [
           {
             "name": "Turnip_v26.2.0-R7-Oneui.zip",
             "size": 2780931,
-            "download_count": 2048,
+            "download_count": 2081,
             "browser_download_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/download/v26.2.0-R7/Turnip_v26.2.0-R7-Oneui.zip"
           },
           {
             "name": "Turnip_v26.2.0-R7.zip",
             "size": 2780600,
-            "download_count": 2340,
+            "download_count": 2364,
             "browser_download_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/download/v26.2.0-R7/Turnip_v26.2.0-R7.zip"
           }
         ]
@@ -136,19 +136,19 @@
         "published_at": "2026-06-09T12:54:40Z",
         "html_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/tag/v26.2.0-R6",
         "prerelease": false,
-        "total_downloads": 20563,
+        "total_downloads": 20582,
         "asset_count": 2,
         "assets": [
           {
             "name": "Turnip_v26.2.0-R6.zip",
             "size": 2782875,
-            "download_count": 17429,
+            "download_count": 17447,
             "browser_download_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/download/v26.2.0-R6/Turnip_v26.2.0-R6.zip"
           },
           {
             "name": "Turnip_v26.2.0-R6_Oneui.zip",
             "size": 2782863,
-            "download_count": 3134,
+            "download_count": 3135,
             "browser_download_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/download/v26.2.0-R6/Turnip_v26.2.0-R6_Oneui.zip"
           }
         ]
@@ -160,25 +160,25 @@
         "published_at": "2026-05-30T18:07:10Z",
         "html_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/tag/v26.2.0-R5",
         "prerelease": false,
-        "total_downloads": 21792,
+        "total_downloads": 21807,
         "asset_count": 3,
         "assets": [
           {
             "name": "Turnip_v26.2.0-R5_OneUI.zip",
             "size": 2712724,
-            "download_count": 7313,
+            "download_count": 7324,
             "browser_download_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/download/v26.2.0-R5/Turnip_v26.2.0-R5_OneUI.zip"
           },
           {
             "name": "Turnip_v26.2.0_R5.zip",
             "size": 2712437,
-            "download_count": 9362,
+            "download_count": 9365,
             "browser_download_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/download/v26.2.0-R5/Turnip_v26.2.0_R5.zip"
           },
           {
             "name": "Turnip_v26.2.0_R5_patched.zip",
             "size": 2716215,
-            "download_count": 5117,
+            "download_count": 5118,
             "browser_download_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/download/v26.2.0-R5/Turnip_v26.2.0_R5_patched.zip"
           }
         ]
@@ -190,13 +190,13 @@
         "published_at": "2026-05-15T07:57:48Z",
         "html_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/tag/v26.2.0-R4",
         "prerelease": false,
-        "total_downloads": 19277,
+        "total_downloads": 19283,
         "asset_count": 2,
         "assets": [
           {
             "name": "Turnio_v26.2.0_R4.zip",
             "size": 2700091,
-            "download_count": 15094,
+            "download_count": 15100,
             "browser_download_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/download/v26.2.0-R4/Turnio_v26.2.0_R4.zip"
           },
           {
@@ -214,19 +214,19 @@
         "published_at": "2026-05-01T10:31:22Z",
         "html_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/tag/turnip_v26.3.0_r3",
         "prerelease": false,
-        "total_downloads": 17686,
+        "total_downloads": 17690,
         "asset_count": 2,
         "assets": [
           {
             "name": "Turnip_26.2.0_R3_OneUI.zip",
             "size": 2675675,
-            "download_count": 7048,
+            "download_count": 7050,
             "browser_download_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/download/turnip_v26.3.0_r3/Turnip_26.2.0_R3_OneUI.zip"
           },
           {
             "name": "Turnip_v26.2.0_R3.zip",
             "size": 2675326,
-            "download_count": 10638,
+            "download_count": 10640,
             "browser_download_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/download/turnip_v26.3.0_r3/Turnip_v26.2.0_R3.zip"
           }
         ]
@@ -238,13 +238,13 @@
         "published_at": "2026-05-15T08:00:02Z",
         "html_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/tag/gen_8_v31",
         "prerelease": false,
-        "total_downloads": 17810,
+        "total_downloads": 17813,
         "asset_count": 1,
         "assets": [
           {
             "name": "Turnip_Gen8_V31.zip",
             "size": 2700162,
-            "download_count": 17810,
+            "download_count": 17813,
             "browser_download_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/download/gen_8_v31/Turnip_Gen8_V31.zip"
           }
         ]
@@ -256,13 +256,13 @@
         "published_at": "2026-05-01T10:29:32Z",
         "html_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/tag/gen_8_v30",
         "prerelease": false,
-        "total_downloads": 18819,
+        "total_downloads": 18821,
         "asset_count": 1,
         "assets": [
           {
             "name": "Turnip_Gen8_V30.zip",
             "size": 2674301,
-            "download_count": 18819,
+            "download_count": 18821,
             "browser_download_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/download/gen_8_v30/Turnip_Gen8_V30.zip"
           }
         ]
@@ -274,13 +274,13 @@
         "published_at": "2026-04-26T11:43:45Z",
         "html_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/tag/v29",
         "prerelease": false,
-        "total_downloads": 10133,
+        "total_downloads": 10134,
         "asset_count": 1,
         "assets": [
           {
             "name": "Turnip_Gen8_V29.zip",
             "size": 2674396,
-            "download_count": 10133,
+            "download_count": 10134,
             "browser_download_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/download/v29/Turnip_Gen8_V29.zip"
           }
         ]
@@ -292,7 +292,7 @@
     "stars": 355,
     "forks": 16,
     "description": "Highly unstable & sloppy AdrenoTools Turnip builds - use with caution. Targetted at better A8XX support.",
-    "fetched_at": "2026-07-01T19:31:16Z",
+    "fetched_at": "2026-07-01T20:32:24Z",
     "releases": [
       {
         "id": 339667226,
@@ -301,19 +301,19 @@
         "published_at": "2026-06-15T16:12:13Z",
         "html_url": "https://github.com/whitebelyash/AdrenoToolsDrivers/releases/tag/tu_v29",
         "prerelease": false,
-        "total_downloads": 33415,
+        "total_downloads": 33477,
         "asset_count": 2,
         "assets": [
           {
             "name": "a8xx-turnip-gen8-sync-V29.zip",
             "size": 2665349,
-            "download_count": 20300,
+            "download_count": 20339,
             "browser_download_url": "https://github.com/whitebelyash/AdrenoToolsDrivers/releases/download/tu_v29/a8xx-turnip-gen8-sync-V29.zip"
           },
           {
             "name": "a8xx-turnip-gen8-V29.zip",
             "size": 2661564,
-            "download_count": 13115,
+            "download_count": 13138,
             "browser_download_url": "https://github.com/whitebelyash/AdrenoToolsDrivers/releases/download/tu_v29/a8xx-turnip-gen8-V29.zip"
           }
         ]
@@ -325,19 +325,19 @@
         "published_at": "2026-06-04T19:30:02Z",
         "html_url": "https://github.com/whitebelyash/AdrenoToolsDrivers/releases/tag/tu_v28",
         "prerelease": false,
-        "total_downloads": 31669,
+        "total_downloads": 31678,
         "asset_count": 2,
         "assets": [
           {
             "name": "a8xx-turnip-gen8-sync-V28.zip",
             "size": 2631788,
-            "download_count": 19823,
+            "download_count": 19829,
             "browser_download_url": "https://github.com/whitebelyash/AdrenoToolsDrivers/releases/download/tu_v28/a8xx-turnip-gen8-sync-V28.zip"
           },
           {
             "name": "a8xx-turnip-gen8-V28.zip",
             "size": 2629110,
-            "download_count": 11846,
+            "download_count": 11849,
             "browser_download_url": "https://github.com/whitebelyash/AdrenoToolsDrivers/releases/download/tu_v28/a8xx-turnip-gen8-V28.zip"
           }
         ]
@@ -349,19 +349,19 @@
         "published_at": "2026-06-01T18:07:22Z",
         "html_url": "https://github.com/whitebelyash/AdrenoToolsDrivers/releases/tag/tu_v27",
         "prerelease": false,
-        "total_downloads": 14539,
+        "total_downloads": 14544,
         "asset_count": 2,
         "assets": [
           {
             "name": "a8xx-turnip-gen8-sync-V27.zip",
             "size": 2601954,
-            "download_count": 9069,
+            "download_count": 9071,
             "browser_download_url": "https://github.com/whitebelyash/AdrenoToolsDrivers/releases/download/tu_v27/a8xx-turnip-gen8-sync-V27.zip"
           },
           {
             "name": "a8xx-turnip-gen8-V27.zip",
             "size": 2598152,
-            "download_count": 5470,
+            "download_count": 5473,
             "browser_download_url": "https://github.com/whitebelyash/AdrenoToolsDrivers/releases/download/tu_v27/a8xx-turnip-gen8-V27.zip"
           }
         ]
@@ -373,13 +373,13 @@
         "published_at": "2026-05-05T18:34:37Z",
         "html_url": "https://github.com/whitebelyash/AdrenoToolsDrivers/releases/tag/tu_v26",
         "prerelease": false,
-        "total_downloads": 56586,
+        "total_downloads": 56592,
         "asset_count": 1,
         "assets": [
           {
             "name": "a8xx-turnip-gen8-V26.zip",
             "size": 2584970,
-            "download_count": 56586,
+            "download_count": 56592,
             "browser_download_url": "https://github.com/whitebelyash/AdrenoToolsDrivers/releases/download/tu_v26/a8xx-turnip-gen8-V26.zip"
           }
         ]
@@ -391,13 +391,13 @@
         "published_at": "2026-04-29T22:51:47Z",
         "html_url": "https://github.com/whitebelyash/AdrenoToolsDrivers/releases/tag/tu_v25.3",
         "prerelease": false,
-        "total_downloads": 25753,
+        "total_downloads": 25757,
         "asset_count": 1,
         "assets": [
           {
             "name": "a8xx-turnip-gen8-V25.3.zip",
             "size": 2561338,
-            "download_count": 25753,
+            "download_count": 25757,
             "browser_download_url": "https://github.com/whitebelyash/AdrenoToolsDrivers/releases/download/tu_v25.3/a8xx-turnip-gen8-V25.3.zip"
           }
         ]
@@ -409,13 +409,13 @@
         "published_at": "2026-04-25T21:25:03Z",
         "html_url": "https://github.com/whitebelyash/AdrenoToolsDrivers/releases/tag/tu_v25.2",
         "prerelease": false,
-        "total_downloads": 20652,
+        "total_downloads": 20654,
         "asset_count": 1,
         "assets": [
           {
             "name": "a8xx-gen8-V25.2.zip",
             "size": 2562158,
-            "download_count": 20652,
+            "download_count": 20654,
             "browser_download_url": "https://github.com/whitebelyash/AdrenoToolsDrivers/releases/download/tu_v25.2/a8xx-gen8-V25.2.zip"
           }
         ]
@@ -427,13 +427,13 @@
         "published_at": "2026-04-19T16:11:25Z",
         "html_url": "https://github.com/whitebelyash/AdrenoToolsDrivers/releases/tag/tu_v25.1",
         "prerelease": false,
-        "total_downloads": 20889,
+        "total_downloads": 20890,
         "asset_count": 1,
         "assets": [
           {
             "name": "a8xx-gen8-V25.1.zip",
             "size": 2558933,
-            "download_count": 20889,
+            "download_count": 20890,
             "browser_download_url": "https://github.com/whitebelyash/AdrenoToolsDrivers/releases/download/tu_v25.1/a8xx-gen8-V25.1.zip"
           }
         ]
@@ -445,13 +445,13 @@
         "published_at": "2026-04-15T19:11:24Z",
         "html_url": "https://github.com/whitebelyash/AdrenoToolsDrivers/releases/tag/tu_v25",
         "prerelease": false,
-        "total_downloads": 13618,
+        "total_downloads": 13619,
         "asset_count": 1,
         "assets": [
           {
             "name": "a8xx-gen8-V25.zip",
             "size": 2558117,
-            "download_count": 13618,
+            "download_count": 13619,
             "browser_download_url": "https://github.com/whitebelyash/AdrenoToolsDrivers/releases/download/tu_v25/a8xx-gen8-V25.zip"
           }
         ]
@@ -463,13 +463,13 @@
         "published_at": "2026-03-28T19:51:33Z",
         "html_url": "https://github.com/whitebelyash/AdrenoToolsDrivers/releases/tag/tu_v24",
         "prerelease": false,
-        "total_downloads": 26352,
+        "total_downloads": 26356,
         "asset_count": 1,
         "assets": [
           {
             "name": "a8xx-gen8-V24.zip",
             "size": 2488214,
-            "download_count": 26352,
+            "download_count": 26356,
             "browser_download_url": "https://github.com/whitebelyash/AdrenoToolsDrivers/releases/download/tu_v24/a8xx-gen8-V24.zip"
           }
         ]
@@ -481,13 +481,13 @@
         "published_at": "2026-03-23T21:15:37Z",
         "html_url": "https://github.com/whitebelyash/AdrenoToolsDrivers/releases/tag/tu_vdont_use",
         "prerelease": false,
-        "total_downloads": 5607,
+        "total_downloads": 5609,
         "asset_count": 1,
         "assets": [
           {
             "name": "a8xx-gen8-clean-26-Vdont_use.zip",
             "size": 2456121,
-            "download_count": 5607,
+            "download_count": 5609,
             "browser_download_url": "https://github.com/whitebelyash/AdrenoToolsDrivers/releases/download/tu_vdont_use/a8xx-gen8-clean-26-Vdont_use.zip"
           }
         ]
@@ -499,7 +499,7 @@
     "stars": 62,
     "forks": 7,
     "description": "mesa turnip driver for android",
-    "fetched_at": "2026-07-01T19:31:16Z",
+    "fetched_at": "2026-07-01T20:32:24Z",
     "releases": [
       {
         "id": 344482095,
@@ -508,13 +508,13 @@
         "published_at": "2026-06-25T04:41:49Z",
         "html_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/tag/26.1.3",
         "prerelease": false,
-        "total_downloads": 2547,
+        "total_downloads": 2562,
         "asset_count": 1,
         "assets": [
           {
             "name": "mesa-turnip-android-26.1.3.zip",
             "size": 3755450,
-            "download_count": 2547,
+            "download_count": 2562,
             "browser_download_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/download/26.1.3/mesa-turnip-android-26.1.3.zip"
           }
         ]
@@ -526,13 +526,13 @@
         "published_at": "2026-06-04T07:52:37Z",
         "html_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/tag/26.1.2",
         "prerelease": false,
-        "total_downloads": 6920,
+        "total_downloads": 6921,
         "asset_count": 1,
         "assets": [
           {
             "name": "mesa-turnip-android-26.1.2.zip",
             "size": 3755805,
-            "download_count": 6920,
+            "download_count": 6921,
             "browser_download_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/download/26.1.2/mesa-turnip-android-26.1.2.zip"
           }
         ]
@@ -562,13 +562,13 @@
         "published_at": "2026-01-26T03:26:49Z",
         "html_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/tag/25.3.4",
         "prerelease": false,
-        "total_downloads": 39079,
+        "total_downloads": 39086,
         "asset_count": 1,
         "assets": [
           {
             "name": "mesa-turnip-android-25.3.4.zip",
             "size": 3350326,
-            "download_count": 39079,
+            "download_count": 39086,
             "browser_download_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/download/25.3.4/mesa-turnip-android-25.3.4.zip"
           }
         ]
@@ -580,13 +580,13 @@
         "published_at": "2026-01-08T03:25:44Z",
         "html_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/tag/25.3.3",
         "prerelease": false,
-        "total_downloads": 5870,
+        "total_downloads": 5874,
         "asset_count": 1,
         "assets": [
           {
             "name": "mesa-turnip-android-25.3.3.zip",
             "size": 3350484,
-            "download_count": 5870,
+            "download_count": 5874,
             "browser_download_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/download/25.3.3/mesa-turnip-android-25.3.3.zip"
           }
         ]
@@ -652,13 +652,13 @@
         "published_at": "2025-09-12T03:07:42Z",
         "html_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/tag/25.2.2",
         "prerelease": false,
-        "total_downloads": 580,
+        "total_downloads": 581,
         "asset_count": 1,
         "assets": [
           {
             "name": "mesa-turnip-android-25.2.2.zip",
             "size": 3262807,
-            "download_count": 580,
+            "download_count": 581,
             "browser_download_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/download/25.2.2/mesa-turnip-android-25.2.2.zip"
           }
         ]
@@ -670,13 +670,13 @@
         "published_at": "2025-07-11T02:36:45Z",
         "html_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/tag/25.1.5",
         "prerelease": false,
-        "total_downloads": 677,
+        "total_downloads": 678,
         "asset_count": 1,
         "assets": [
           {
             "name": "mesa-turnip-android-25.1.5.zip",
             "size": 3200483,
-            "download_count": 677,
+            "download_count": 678,
             "browser_download_url": "https://github.com/nihui/mesa-turnip-android-driver/releases/download/25.1.5/mesa-turnip-android-25.1.5.zip"
           }
         ]
@@ -688,7 +688,7 @@
     "stars": 629,
     "forks": 4,
     "description": "",
-    "fetched_at": "2026-07-01T19:31:16Z",
+    "fetched_at": "2026-07-01T20:32:24Z",
     "releases": [
       {
         "id": 313850327,
@@ -697,13 +697,13 @@
         "published_at": "2026-04-27T01:41:35Z",
         "html_url": "https://github.com/MrPurple666/purple-turnip/releases/tag/vturnip_mrpurple_T28-toasted.adpkg",
         "prerelease": false,
-        "total_downloads": 433549,
+        "total_downloads": 433744,
         "asset_count": 1,
         "assets": [
           {
             "name": "turnip_mrpurple_T28-toasted.adpkg.zip",
             "size": 3425845,
-            "download_count": 433549,
+            "download_count": 433744,
             "browser_download_url": "https://github.com/MrPurple666/purple-turnip/releases/download/vturnip_mrpurple_T28-toasted.adpkg/turnip_mrpurple_T28-toasted.adpkg.zip"
           }
         ]
@@ -715,13 +715,13 @@
         "published_at": "2026-04-25T21:20:30Z",
         "html_url": "https://github.com/MrPurple666/purple-turnip/releases/tag/vturnip_mrpurple_T27-toasted.adpkg",
         "prerelease": false,
-        "total_downloads": 79870,
+        "total_downloads": 79907,
         "asset_count": 1,
         "assets": [
           {
             "name": "turnip_mrpurple_T27-toasted.adpkg.zip",
             "size": 3420827,
-            "download_count": 79870,
+            "download_count": 79907,
             "browser_download_url": "https://github.com/MrPurple666/purple-turnip/releases/download/vturnip_mrpurple_T27-toasted.adpkg/turnip_mrpurple_T27-toasted.adpkg.zip"
           }
         ]
@@ -733,13 +733,13 @@
         "published_at": "2026-03-07T18:23:40Z",
         "html_url": "https://github.com/MrPurple666/purple-turnip/releases/tag/vturnip_mrpurple_T26-toasted.adpkg",
         "prerelease": false,
-        "total_downloads": 242697,
+        "total_downloads": 242720,
         "asset_count": 1,
         "assets": [
           {
             "name": "turnip_mrpurple_T26-toasted.adpkg.zip",
             "size": 3285344,
-            "download_count": 242697,
+            "download_count": 242720,
             "browser_download_url": "https://github.com/MrPurple666/purple-turnip/releases/download/vturnip_mrpurple_T26-toasted.adpkg/turnip_mrpurple_T26-toasted.adpkg.zip"
           }
         ]
@@ -751,13 +751,13 @@
         "published_at": "2026-01-19T11:42:45Z",
         "html_url": "https://github.com/MrPurple666/purple-turnip/releases/tag/vturnip_mrpurple_T24-toasted.adpkg",
         "prerelease": false,
-        "total_downloads": 263074,
+        "total_downloads": 263095,
         "asset_count": 1,
         "assets": [
           {
             "name": "turnip_mrpurple_T24-toasted.adpkg.zip",
             "size": 3562705,
-            "download_count": 263074,
+            "download_count": 263095,
             "browser_download_url": "https://github.com/MrPurple666/purple-turnip/releases/download/vturnip_mrpurple_T24-toasted.adpkg/turnip_mrpurple_T24-toasted.adpkg.zip"
           }
         ]
@@ -769,13 +769,13 @@
         "published_at": "2026-01-16T17:53:10Z",
         "html_url": "https://github.com/MrPurple666/purple-turnip/releases/tag/vturnip_mrpurple_T23-toasted.adpkg",
         "prerelease": false,
-        "total_downloads": 253280,
+        "total_downloads": 253348,
         "asset_count": 1,
         "assets": [
           {
             "name": "turnip_mrpurple_T23-toasted.adpkg.zip",
             "size": 3558070,
-            "download_count": 253280,
+            "download_count": 253348,
             "browser_download_url": "https://github.com/MrPurple666/purple-turnip/releases/download/vturnip_mrpurple_T23-toasted.adpkg/turnip_mrpurple_T23-toasted.adpkg.zip"
           }
         ]
@@ -787,13 +787,13 @@
         "published_at": "2025-09-01T20:18:52Z",
         "html_url": "https://github.com/MrPurple666/purple-turnip/releases/tag/vturnip_mrpurple_T22hf-toasted.adpkg",
         "prerelease": false,
-        "total_downloads": 630871,
+        "total_downloads": 630885,
         "asset_count": 1,
         "assets": [
           {
             "name": "turnip_mrpurple_T22hf-toasted.adpkg.zip",
             "size": 2769602,
-            "download_count": 630871,
+            "download_count": 630885,
             "browser_download_url": "https://github.com/MrPurple666/purple-turnip/releases/download/vturnip_mrpurple_T22hf-toasted.adpkg/turnip_mrpurple_T22hf-toasted.adpkg.zip"
           }
         ]
@@ -805,13 +805,13 @@
         "published_at": "2025-07-26T17:52:48Z",
         "html_url": "https://github.com/MrPurple666/purple-turnip/releases/tag/vturnip_mrpurple_T21-AYANEO.adpkg",
         "prerelease": false,
-        "total_downloads": 178754,
+        "total_downloads": 178757,
         "asset_count": 1,
         "assets": [
           {
             "name": "turnip_mrpurple_T21-AYANEO.adpkg.zip",
             "size": 2709450,
-            "download_count": 178754,
+            "download_count": 178757,
             "browser_download_url": "https://github.com/MrPurple666/purple-turnip/releases/download/vturnip_mrpurple_T21-AYANEO.adpkg/turnip_mrpurple_T21-AYANEO.adpkg.zip"
           }
         ]
@@ -823,13 +823,13 @@
         "published_at": "2025-07-17T19:49:58Z",
         "html_url": "https://github.com/MrPurple666/purple-turnip/releases/tag/vturnip_mrpurple-T21-toasted.adpkg",
         "prerelease": false,
-        "total_downloads": 85178,
+        "total_downloads": 85181,
         "asset_count": 1,
         "assets": [
           {
             "name": "turnip_mrpurple-T21-toasted.adpkg.zip",
             "size": 2711621,
-            "download_count": 85178,
+            "download_count": 85181,
             "browser_download_url": "https://github.com/MrPurple666/purple-turnip/releases/download/vturnip_mrpurple-T21-toasted.adpkg/turnip_mrpurple-T21-toasted.adpkg.zip"
           }
         ]
@@ -841,13 +841,13 @@
         "published_at": "2025-06-01T07:33:48Z",
         "html_url": "https://github.com/MrPurple666/purple-turnip/releases/tag/vturnip_mrpurple-T20-toasted.adpkg",
         "prerelease": false,
-        "total_downloads": 69151,
+        "total_downloads": 69155,
         "asset_count": 1,
         "assets": [
           {
             "name": "turnip_mrpurple-T20-toasted.adpkg.zip",
             "size": 2669290,
-            "download_count": 69151,
+            "download_count": 69155,
             "browser_download_url": "https://github.com/MrPurple666/purple-turnip/releases/download/vturnip_mrpurple-T20-toasted.adpkg/turnip_mrpurple-T20-toasted.adpkg.zip"
           }
         ]
@@ -859,13 +859,13 @@
         "published_at": "2025-06-01T07:35:20Z",
         "html_url": "https://github.com/MrPurple666/purple-turnip/releases/tag/vturnip_mrpurple-T19-toasted.adpkg",
         "prerelease": false,
-        "total_downloads": 263202,
+        "total_downloads": 263218,
         "asset_count": 1,
         "assets": [
           {
             "name": "turnip_mrpurple-T19-toasted.adpkg.zip",
             "size": 2424925,
-            "download_count": 263202,
+            "download_count": 263218,
             "browser_download_url": "https://github.com/MrPurple666/purple-turnip/releases/download/vturnip_mrpurple-T19-toasted.adpkg/turnip_mrpurple-T19-toasted.adpkg.zip"
           }
         ]
@@ -877,7 +877,7 @@
     "stars": 109,
     "forks": 11,
     "description": "Automated bleeding-edge Mesa Turnip Vulkan driver builds for Qualcomm Adreno GPUs — packaged for AdrenoTools, updated on every upstream Mesa commit.",
-    "fetched_at": "2026-07-01T19:31:16Z",
+    "fetched_at": "2026-07-01T20:32:24Z",
     "releases": [
       {
         "id": 347623741,
@@ -886,25 +886,25 @@
         "published_at": "2026-07-01T17:37:57Z",
         "html_url": "https://github.com/The412Banner/Banners-Turnip/releases/tag/v26.2.0-20260701-r9",
         "prerelease": false,
-        "total_downloads": 22,
+        "total_downloads": 31,
         "asset_count": 3,
         "assets": [
           {
             "name": "Turnip-v26.2.0-20260701-r9-710-720-Test.zip",
             "size": 2650791,
-            "download_count": 5,
+            "download_count": 9,
             "browser_download_url": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.2.0-20260701-r9/Turnip-v26.2.0-20260701-r9-710-720-Test.zip"
           },
           {
             "name": "Turnip-v26.2.0-20260701-r9-A8xx.zip",
             "size": 2650978,
-            "download_count": 10,
+            "download_count": 14,
             "browser_download_url": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.2.0-20260701-r9/Turnip-v26.2.0-20260701-r9-A8xx.zip"
           },
           {
             "name": "Turnip-v26.2.0-20260701-r9.zip",
             "size": 2651922,
-            "download_count": 7,
+            "download_count": 8,
             "browser_download_url": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.2.0-20260701-r9/Turnip-v26.2.0-20260701-r9.zip"
           }
         ]
@@ -916,7 +916,7 @@
         "published_at": "2026-07-01T16:48:06Z",
         "html_url": "https://github.com/The412Banner/Banners-Turnip/releases/tag/v26.2.0-20260701-r8",
         "prerelease": false,
-        "total_downloads": 20,
+        "total_downloads": 21,
         "asset_count": 3,
         "assets": [
           {
@@ -934,7 +934,7 @@
           {
             "name": "Turnip-v26.2.0-20260701-r8.zip",
             "size": 2651199,
-            "download_count": 6,
+            "download_count": 7,
             "browser_download_url": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.2.0-20260701-r8/Turnip-v26.2.0-20260701-r8.zip"
           }
         ]
@@ -1120,19 +1120,49 @@
         ]
       },
       {
+        "id": 347678190,
+        "tag_name": "v26.2.0-20260701-r11",
+        "name": "Turnip v26.2.0-20260701-r11",
+        "published_at": "2026-07-01T19:34:34Z",
+        "html_url": "https://github.com/The412Banner/Banners-Turnip/releases/tag/v26.2.0-20260701-r11",
+        "prerelease": false,
+        "total_downloads": 11,
+        "asset_count": 3,
+        "assets": [
+          {
+            "name": "Turnip-v26.2.0-20260701-r11-710-720-Test.zip",
+            "size": 2651103,
+            "download_count": 5,
+            "browser_download_url": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.2.0-20260701-r11/Turnip-v26.2.0-20260701-r11-710-720-Test.zip"
+          },
+          {
+            "name": "Turnip-v26.2.0-20260701-r11-A8xx.zip",
+            "size": 2652268,
+            "download_count": 3,
+            "browser_download_url": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.2.0-20260701-r11/Turnip-v26.2.0-20260701-r11-A8xx.zip"
+          },
+          {
+            "name": "Turnip-v26.2.0-20260701-r11.zip",
+            "size": 2651230,
+            "download_count": 3,
+            "browser_download_url": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.2.0-20260701-r11/Turnip-v26.2.0-20260701-r11.zip"
+          }
+        ]
+      },
+      {
         "id": 347651035,
         "tag_name": "v26.2.0-20260701-r10",
         "name": "Turnip v26.2.0-20260701-r10",
         "published_at": "2026-07-01T18:37:47Z",
         "html_url": "https://github.com/The412Banner/Banners-Turnip/releases/tag/v26.2.0-20260701-r10",
         "prerelease": false,
-        "total_downloads": 10,
+        "total_downloads": 12,
         "asset_count": 3,
         "assets": [
           {
             "name": "Turnip-v26.2.0-20260701-r10-710-720-Test.zip",
             "size": 2651796,
-            "download_count": 2,
+            "download_count": 3,
             "browser_download_url": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.2.0-20260701-r10/Turnip-v26.2.0-20260701-r10-710-720-Test.zip"
           },
           {
@@ -1144,38 +1174,8 @@
           {
             "name": "Turnip-v26.2.0-20260701-r10.zip",
             "size": 2651056,
-            "download_count": 5,
+            "download_count": 6,
             "browser_download_url": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.2.0-20260701-r10/Turnip-v26.2.0-20260701-r10.zip"
-          }
-        ]
-      },
-      {
-        "id": 347247650,
-        "tag_name": "v26.2.0-20260701",
-        "name": "Turnip v26.2.0-20260701",
-        "published_at": "2026-07-01T05:32:04Z",
-        "html_url": "https://github.com/The412Banner/Banners-Turnip/releases/tag/v26.2.0-20260701",
-        "prerelease": false,
-        "total_downloads": 47,
-        "asset_count": 3,
-        "assets": [
-          {
-            "name": "Turnip-v26.2.0-20260701-710-720-Test.zip",
-            "size": 2651315,
-            "download_count": 9,
-            "browser_download_url": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.2.0-20260701/Turnip-v26.2.0-20260701-710-720-Test.zip"
-          },
-          {
-            "name": "Turnip-v26.2.0-20260701-A8xx.zip",
-            "size": 2651325,
-            "download_count": 20,
-            "browser_download_url": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.2.0-20260701/Turnip-v26.2.0-20260701-A8xx.zip"
-          },
-          {
-            "name": "Turnip-v26.2.0-20260701.zip",
-            "size": 2650914,
-            "download_count": 18,
-            "browser_download_url": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.2.0-20260701/Turnip-v26.2.0-20260701.zip"
           }
         ]
       }
